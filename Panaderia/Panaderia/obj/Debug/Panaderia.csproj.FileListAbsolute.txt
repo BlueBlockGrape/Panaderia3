@@ -1,0 +1,54 @@
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Panaderia.exe.config
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\MySql.Data.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Google.Protobuf.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\MySql.Data.xml
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.csprojAssemblyReference.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.Login.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.Properties.Resources.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.GenerateResource.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CoreCompileInputs.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Datos.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia\bin\Debug\Datos.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia\obj\Debug\Panaderia.e.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Panaderia.exe.config
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Datos.dll
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\MySql.Data.dll
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Google.Protobuf.dll
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\Datos.pdb
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\bin\Debug\MySql.Data.xml
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.csprojAssemblyReference.cache
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.Login.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.Properties.Resources.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaAgregarUsuario.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaComprar.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaCorte.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarUsuario.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarVenta.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaEliminarUsuario.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaMenu.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaRegistros.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaUsuario.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.GenerateResource.cache
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CoreCompileInputs.cache
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaControl.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesAdd.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesDelete.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesMenu.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesUpdate.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorAdd.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorDelete.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorMenu.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorUpdate.resources
+C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaInventarios.resources
