@@ -12,12 +12,12 @@ using Datos.Daos;
 
 namespace Panaderia
 {
-    public partial class ventanaControl : Form
+    public partial class VentanaControl : Form
     {
         private int ind;
         private Usuario usuario;
         private List<Ventas> listav;
-        public ventanaControl(Usuario usuario,List<Ventas> listav, int ind )
+        public VentanaControl(Usuario usuario,List<Ventas> listav, int ind )
         {
             this.usuario = usuario;
             this.listav = listav;
@@ -74,7 +74,7 @@ namespace Panaderia
                             this.Hide();
                             break;
                         case 2:
-                            ventanaUsuario ven = new ventanaUsuario(usuario, listav);
+                            VentanaUsuario ven = new VentanaUsuario(usuario, listav);
                             ven.Show();
                             this.Hide();
                             break;
@@ -89,7 +89,7 @@ namespace Panaderia
                             this.Hide();
                             break;
                         case 5:
-                            ventanaInventarios inv= new ventanaInventarios(usuario, listav);
+                            VentanaInventarios inv= new VentanaInventarios(usuario, listav);
                             inv.Show();
                             this.Hide();
                             break;
@@ -120,7 +120,7 @@ namespace Panaderia
                     this.Hide();
                     break;
                 default:
-                    ventanaMenu ven = new ventanaMenu(usuario, listav);
+                    VentanaMenu ven = new VentanaMenu(usuario, listav);
                     ven.Show();
                     this.Hide();
                     break;

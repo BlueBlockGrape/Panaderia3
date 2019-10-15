@@ -11,23 +11,23 @@ namespace Datos.Daos
 {
     public class Proveedordao
     {
-        private MySqlConnection conexion = new MySqlConnection();
+        private MySqlConnection Conexion = new MySqlConnection();
         public string Insert(Proveedor p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "INSERT INTO Proveedor (Nombre, Domicilio, Telefono, Productos)" +
                             "VALUES (@Nombre, @Domicilio, @Telefono, @Productos)";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Domicilio", p.Domicilio);
-                sqlCom.Parameters.AddWithValue("@Telefono", p.Telefono);
-                sqlCom.Parameters.AddWithValue("@Productos", p.Productos);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Domicilio", p.Domicilio);
+                SqlCom.Parameters.AddWithValue("@Telefono", p.Telefono);
+                SqlCom.Parameters.AddWithValue("@Productos", p.Productos);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return "si";
             }
             catch (Exception e)
@@ -39,16 +39,16 @@ namespace Datos.Daos
 
         public bool Delete(Proveedor p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "DELETE FROM Proveedor WHERE Id_Proveedor=@Id_Proveedor limit 1;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Proveedor", p.Id_Proveedor);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Proveedor", p.Id_Proveedor);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
 
             }
@@ -61,20 +61,20 @@ namespace Datos.Daos
 
         public bool Update(Proveedor p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "UPDATE Proveedor SET Id_Proveedor=@Id_Proveedor, Nombre=@Nombre, Domicilio=@Domicilio, Telefono=@Telefono, Productos=@Productos WHERE Id_Proveedor = @Id_Proveedor limit 1;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Proveedor", p.Id_Proveedor);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Domicilio", p.Domicilio);
-                sqlCom.Parameters.AddWithValue("@Telefono", p.Telefono);
-                sqlCom.Parameters.AddWithValue("@Productos", p.Productos);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Proveedor", p.Id_Proveedor);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Domicilio", p.Domicilio);
+                SqlCom.Parameters.AddWithValue("@Telefono", p.Telefono);
+                SqlCom.Parameters.AddWithValue("@Productos", p.Productos);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -88,7 +88,7 @@ namespace Datos.Daos
         public List<Proveedor> GetAll()
         {
             List<Proveedor> lista = new List<Proveedor>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
 
@@ -99,7 +99,7 @@ namespace Datos.Daos
                 throw;
             }
 
-            conexion.Open();
+            Conexion.Open();
 
             DataSet ds = new DataSet();
             MySqlDataAdapter da = new MySqlDataAdapter();
@@ -109,7 +109,7 @@ namespace Datos.Daos
             //cnn.Open();
             cmd.CommandText = "SELECT * FROM Proveedor";
             da.SelectCommand = cmd;
-            da.SelectCommand.Connection = conexion;
+            da.SelectCommand.Connection = Conexion;
             da.Fill(ds);
             DataSet datos = ds;
 

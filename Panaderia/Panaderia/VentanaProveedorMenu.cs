@@ -30,7 +30,7 @@ namespace Panaderia
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ventanaMenu ven = new ventanaMenu(usuario, listav);
+            VentanaMenu ven = new VentanaMenu(usuario, listav);
             ven.Show();
             this.Hide();
             //Application.Exit();

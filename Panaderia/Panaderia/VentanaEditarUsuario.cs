@@ -99,7 +99,7 @@ namespace Panaderia
         private void button2_Click(object sender, EventArgs e)
         {
             
-                ventanaUsuario ven = new ventanaUsuario(usuario,listav);
+                VentanaUsuario ven = new VentanaUsuario(usuario,listav);
                 ven.Show();
                 this.Hide();
             

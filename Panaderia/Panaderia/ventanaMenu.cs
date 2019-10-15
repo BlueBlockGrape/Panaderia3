@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
-    public partial class ventanaMenu : Form
+    public partial class VentanaMenu : Form
     {
         private Usuario usuario;
         private List<Ventas> listav;
-        public ventanaMenu(Usuario p,List<Ventas> listav)
+        public VentanaMenu(Usuario p,List<Ventas> listav)
         {
             this.listav = listav;
             usuario = p;
@@ -36,14 +36,14 @@ namespace Panaderia
         {
             if (usuario.Administrador)
             {
-                ventanaUsuario ven = new ventanaUsuario(usuario,listav);
+                VentanaUsuario ven = new VentanaUsuario(usuario,listav);
                 
                 this.Hide();
                 ven.Show();
             }
             else
             {
-                ventanaControl v = new ventanaControl(usuario, listav, 2);
+                VentanaControl v = new VentanaControl(usuario, listav, 2);
                
                 this.Hide();
                 v.Show();
@@ -74,7 +74,7 @@ namespace Panaderia
             }
             else
             {
-                ventanaControl v = new ventanaControl(usuario, listav, 3);
+                VentanaControl v = new VentanaControl(usuario, listav, 3);
                 v.Show();
                 this.Hide();
             }
@@ -90,7 +90,7 @@ namespace Panaderia
             }
             else
             {
-                ventanaControl v = new ventanaControl(usuario, listav, 3);
+                VentanaControl v = new VentanaControl(usuario, listav, 3);
                 v.Show();
                 this.Hide();
             }
@@ -100,13 +100,13 @@ namespace Panaderia
         {
             if (usuario.Administrador)
             {
-                ventanaInventarios ven = new ventanaInventarios(usuario, listav);
+                VentanaInventarios ven = new VentanaInventarios(usuario, listav);
                 ven.Show();
                 this.Hide();
             }
             else
             {
-                ventanaControl v = new ventanaControl(usuario, listav, 5);
+                VentanaControl v = new VentanaControl(usuario, listav, 5);
                 v.Show();
                 this.Hide();
             }

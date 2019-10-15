@@ -10,23 +10,23 @@ namespace Datos.Daos
 {
     public class Materiadao
     {
-        private MySqlConnection conexion = new MySqlConnection();
+        private MySqlConnection Conexion = new MySqlConnection();
 
         public bool Agregar(Materia p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "INSERT INTO Materia (Id_Materia, Nombre, Existencias, Descripcion, Ultima_Mod)" +
                             "VALUES (null, @Nombre, @Existencias, @Descripcion, null)";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Existencias", p.Existencias);
-                sqlCom.Parameters.AddWithValue("@Descripcion", p.Descripcion);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Existencias", p.Existencias);
+                SqlCom.Parameters.AddWithValue("@Descripcion", p.Descripcion);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -37,20 +37,20 @@ namespace Datos.Daos
 
         public bool Editar(Materia p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "Update Materia Set Nombre = @Nombre, Existencias = @Existencias, Descripcion = @Descripcion " +
                             "Where Id_Materia = @Id_Materia";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Existencias", p.Existencias);
-                sqlCom.Parameters.AddWithValue("@Descripcion", p.Descripcion);
-                sqlCom.Parameters.AddWithValue("@Id_Materia", p.Id_Materia);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Existencias", p.Existencias);
+                SqlCom.Parameters.AddWithValue("@Descripcion", p.Descripcion);
+                SqlCom.Parameters.AddWithValue("@Id_Materia", p.Id_Materia);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception )
@@ -61,16 +61,16 @@ namespace Datos.Daos
 
         public bool Eliminar(Materia p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "DELETE FROM Materia WHERE Id_Materia = @Id_Materia";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Materia", p.Id_Materia);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Materia", p.Id_Materia);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -82,35 +82,35 @@ namespace Datos.Daos
 
         public List<Materia> Ver()
         {
-            List<Materia> lista = new List<Materia>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            List<Materia> Lista = new List<Materia>();
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
 
-            conexion.Open();
+            Conexion.Open();
 
-            DataSet ds = new DataSet();
-            MySqlDataAdapter da = new MySqlDataAdapter();
+            DataSet Ds = new DataSet();
+            MySqlDataAdapter Da = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand();
 
             cmd.CommandText = "SELECT * FROM Materia";
-            da.SelectCommand = cmd;
-            da.SelectCommand.Connection = conexion;
-            da.Fill(ds);
-            DataSet datos = ds;
+            Da.SelectCommand = cmd;
+            Da.SelectCommand.Connection = Conexion;
+            Da.Fill(Ds);
+            DataSet Datos = Ds;
 
-            DataTable dt = datos.Tables[0];
-            Materia p;
-            foreach (DataRow r in dt.Rows)
+            DataTable Dt = Datos.Tables[0];
+            Materia P;
+            foreach (DataRow r in Dt.Rows)
             {
-                p = new Materia();
-                p.Id_Materia = (int)r.ItemArray[0];
-                p.Nombre = (string)r.ItemArray[1];
-                p.Descripcion = (string)r.ItemArray[2];
-                p.Existencias = (int)r.ItemArray[3];
-                p.Ultima_Mod = (DateTime)r.ItemArray[4];
-                lista.Add(p);
+                P = new Materia();
+                P.Id_Materia = (int)r.ItemArray[0];
+                P.Nombre = (string)r.ItemArray[1];
+                P.Descripcion = (string)r.ItemArray[2];
+                P.Existencias = (int)r.ItemArray[3];
+                P.Ultima_Mod = (DateTime)r.ItemArray[4];
+                Lista.Add(P);
             }
-            conexion.Close();
-            return lista;
+            Conexion.Close();
+            return Lista;
         }
     }
 }

@@ -11,18 +11,18 @@ namespace Datos.Daos
 {
    public class Usuariodao
     {
-        private MySqlConnection conexion = new MySqlConnection();
+        private MySqlConnection Conexion = new MySqlConnection();
 
         public Usuario Entrar(Usuario p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
                 //  bool si = false;
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "select * from Usuario where Id_Usuario=@Id_Usuario ";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 sqlCom.Parameters.AddWithValue("@Id_Usuario", p.Id_Usuario);
                 // sqlCom.Parameters.AddWithValue("@Contraseña", p.Contraseña);
                 sqlCom.ExecuteNonQuery();
@@ -30,7 +30,7 @@ namespace Datos.Daos
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = sqlCom;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -49,7 +49,7 @@ namespace Datos.Daos
 
 
                 }
-                conexion.Close();
+                Conexion.Close();
                 return user;
 
             }
@@ -64,13 +64,13 @@ namespace Datos.Daos
 
         public string Registrar(Usuario p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "INSERT INTO Usuario (Id_Usuario, Contraseña, Nombre, Apellidos, " +
                     "Fecha_Nac, Direccion, Administrador)" + "values(null, @Contraseña, @Nombre, @Apellido, @fech, @Direccion, @Tipo); ";
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 sqlCom.Parameters.AddWithValue("@Contraseña", p.Contraseña);
                 sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
                 sqlCom.Parameters.AddWithValue("@Apellido", p.Apellidos);
@@ -79,7 +79,7 @@ namespace Datos.Daos
                 sqlCom.Parameters.AddWithValue("@Tipo", p.Administrador);
                 sqlCom.ExecuteNonQuery();
 
-                conexion.Close();
+                Conexion.Close();
                 return "si";
             }
             catch (Exception e)
@@ -94,16 +94,16 @@ namespace Datos.Daos
 
         public bool Delete(int id)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "DELETE FROM Usuario WHERE Id_usuario=@id limit 1;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 sqlCom.Parameters.AddWithValue("@id", id);
                 sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                Conexion.Close();
                 return true;
 
             }
@@ -121,13 +121,13 @@ namespace Datos.Daos
 
         public bool Update(Usuario p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "UPDATE Usuario SET  Contraseña = @Contraseña, Nombre = @Nombre, Apellidos = @Apellidos, Fecha_Nac = @Fecha_Nac, Direccion = @Direccion, Administrador = @Administrador WHERE Id_Usuario = @Id_Usuari limit 1;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 sqlCom.Parameters.AddWithValue("@Contraseña", p.Contraseña);
                 sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
                 sqlCom.Parameters.AddWithValue("@Apellidos", p.Apellidos);
@@ -136,7 +136,7 @@ namespace Datos.Daos
                 sqlCom.Parameters.AddWithValue("@Administrador", p.Administrador);
                 sqlCom.Parameters.AddWithValue("@Id_Usuari", p.Id_Usuario);
                 sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -152,14 +152,14 @@ namespace Datos.Daos
 
         public Usuario Ultimo()
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
                 //  bool si = false;
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "SELECT* FROM Usuario ORDER by Id_Usuario DESC LIMIT 1; ";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 //  sqlCom.Parameters.AddWithValue("@Id_Usuario", g);
                 // sqlCom.Parameters.AddWithValue("@Contraseña", p.Contraseña);
                 sqlCom.ExecuteNonQuery();
@@ -167,7 +167,7 @@ namespace Datos.Daos
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = sqlCom;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -186,7 +186,7 @@ namespace Datos.Daos
 
 
                 }
-                conexion.Close();
+                Conexion.Close();
                 return user;
 
             }
@@ -201,10 +201,10 @@ namespace Datos.Daos
         public List<Usuario> GetAll()
         {
             List<Usuario> lista = new List<Usuario>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -214,7 +214,7 @@ namespace Datos.Daos
                 //cnn.Open();
                 cmd.CommandText = "SELECT * FROM Usuario";
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -232,7 +232,7 @@ namespace Datos.Daos
                     user.Administrador = (bool)r.ItemArray[6];
                     lista.Add(user);
                 }
-                conexion.Close();
+                Conexion.Close();
                 return lista;
             }
             catch (Exception)
@@ -248,14 +248,14 @@ namespace Datos.Daos
 
         public Usuario Especifico(int g)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
                 //  bool si = false;
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "select * from Usuario where Id_Usuario=@Id_Usuario ";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
+                MySqlCommand sqlCom = new MySqlCommand(insertQuery, Conexion);
                 sqlCom.Parameters.AddWithValue("@Id_Usuario", g);
                 // sqlCom.Parameters.AddWithValue("@Contraseña", p.Contraseña);
                 sqlCom.ExecuteNonQuery();
@@ -263,7 +263,7 @@ namespace Datos.Daos
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = sqlCom;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -282,7 +282,7 @@ namespace Datos.Daos
 
 
                 }
-                conexion.Close();
+                Conexion.Close();
                 return user;
 
             }

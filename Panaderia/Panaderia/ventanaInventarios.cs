@@ -15,12 +15,12 @@ namespace Panaderia
 {
     
 
-    public partial class ventanaInventarios : Form
+    public partial class VentanaInventarios : Form
     {
         private Usuario usuario;
         private List<Ventas> listav;
         private MySqlConnection conexion = new MySqlConnection();
-        public ventanaInventarios(Usuario usuario,List<Ventas> listav)
+        public VentanaInventarios(Usuario usuario,List<Ventas> listav)
         {
             this.usuario = usuario;
             this.listav = listav;
@@ -135,7 +135,7 @@ namespace Panaderia
         {
             //Manda al formulario principal
           
-                ventanaMenu ven = new ventanaMenu(usuario, listav);
+                VentanaMenu ven = new VentanaMenu(usuario, listav);
                 ven.Show();
                 this.Close();
            

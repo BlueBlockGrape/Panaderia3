@@ -1,6 +1,6 @@
 ﻿namespace Panaderia
 {
-    partial class ventanaControl
+    partial class VentanaControl
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaControl));
             this.Passtxt = new System.Windows.Forms.TextBox();
             this.Usertxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();

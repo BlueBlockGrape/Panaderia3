@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace Panaderia
 {
 
-    public partial class ventanaEliminarUsuario : Form
+    public partial class VentanaEliminarUsuario : Form
     {
         private Usuario usuario;
         private List<Ventas> listav;
-        public ventanaEliminarUsuario(Usuario p, List<Ventas> listav)
+        public VentanaEliminarUsuario(Usuario p, List<Ventas> listav)
         {
             this.listav = listav;
             usuario = p;
@@ -51,7 +51,7 @@ namespace Panaderia
         private void button2_Click(object sender, EventArgs e)
         {
             
-                ventanaUsuario ven = new ventanaUsuario(usuario,listav);
+                VentanaUsuario ven = new VentanaUsuario(usuario,listav);
                 ven.Show();
                 this.Hide();
             

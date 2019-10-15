@@ -1,6 +1,6 @@
 ﻿namespace Panaderia
 {
-    partial class ventanaInventarios
+    partial class VentanaInventarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaInventarios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaInventarios));
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.lblSeleccionar = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();

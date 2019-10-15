@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
-    public partial class ventanaUsuario : Form
+    public partial class VentanaUsuario : Form
     {
         private Usuario usuario;
         private List<Ventas> listav;
-        public ventanaUsuario(Usuario p, List<Ventas> listav)
+        public VentanaUsuario(Usuario p, List<Ventas> listav)
         {
             this.listav = listav;
             usuario = p;
@@ -25,7 +25,7 @@ namespace Panaderia
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             
-                ventanaAgregarUsuario ven = new ventanaAgregarUsuario(usuario,listav);
+                VentanaAgregarUsuario ven = new VentanaAgregarUsuario(usuario,listav);
                 ven.Show();
                 this.Hide();
             
@@ -34,7 +34,7 @@ namespace Panaderia
         private void button1_Click(object sender, EventArgs e)
         {
             
-                ventanaMenu ven = new ventanaMenu(usuario,listav);
+                VentanaMenu ven = new VentanaMenu(usuario,listav);
                 
                 this.Hide();
             ven.Show();
@@ -53,7 +53,7 @@ namespace Panaderia
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             
-                ventanaEliminarUsuario ven = new ventanaEliminarUsuario(usuario,listav);
+                VentanaEliminarUsuario ven = new VentanaEliminarUsuario(usuario,listav);
                 ven.Show();
                 this.Hide();
             

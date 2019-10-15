@@ -169,7 +169,7 @@ namespace Panaderia
             }
             else
             {
-                ventanaControl v = new ventanaControl(usuario, listav, 1);
+                VentanaControl v = new VentanaControl(usuario, listav, 1);
                 v.Show();
                 this.Hide();
 
@@ -228,7 +228,7 @@ namespace Panaderia
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            ventanaMenu v = new ventanaMenu(usuario, listav);
+            VentanaMenu v = new VentanaMenu(usuario, listav);
             v.Show();
             this.Hide();
         }

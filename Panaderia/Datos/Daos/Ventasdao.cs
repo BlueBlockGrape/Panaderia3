@@ -11,25 +11,25 @@ namespace Datos.Daos
 {
     public class Ventasdao
     {
-        private MySqlConnection conexion = new MySqlConnection();
+        private MySqlConnection Conexion = new MySqlConnection();
 
         public bool Insert(Ventas p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "INSERT INTO ventas (Id_Venta,Id_Usuario, Fecha, Total, Descuento)" +
                             "VALUES (@Id_Venta,@Id_Usuario, @Fecha, @Total, @Descuento)";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Venta", p.Id_Venta);
-                sqlCom.Parameters.AddWithValue("@Id_Usuario", p.Id_Usuario);
-                sqlCom.Parameters.AddWithValue("@Fecha", p.Fecha);
-                sqlCom.Parameters.AddWithValue("@Total", p.Total);
-                sqlCom.Parameters.AddWithValue("@Descuento", p.Descuento);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Venta", p.Id_Venta);
+                SqlCom.Parameters.AddWithValue("@Id_Usuario", p.Id_Usuario);
+                SqlCom.Parameters.AddWithValue("@Fecha", p.Fecha);
+                SqlCom.Parameters.AddWithValue("@Total", p.Total);
+                SqlCom.Parameters.AddWithValue("@Descuento", p.Descuento);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception )
@@ -44,16 +44,16 @@ namespace Datos.Daos
 
         public bool Delete(int id)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "DELETE FROM Ventas WHERE Id_Venta=@id ;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@id", id);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@id", id);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
 
             }
@@ -67,18 +67,18 @@ namespace Datos.Daos
 
         public bool Update(Ventas p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "UPDATE Ventas SET   Total = @Total, Descuento = @Descuento WHERE Id_Venta = @Id_Venta;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Venta", p.Id_Venta);
-                sqlCom.Parameters.AddWithValue("@Total", p.Total);
-                sqlCom.Parameters.AddWithValue("@Descuento", p.Descuento);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Venta", p.Id_Venta);
+                SqlCom.Parameters.AddWithValue("@Total", p.Total);
+                SqlCom.Parameters.AddWithValue("@Descuento", p.Descuento);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -92,10 +92,10 @@ namespace Datos.Daos
         public List<Ventas> GetAll()
         {
             List<Ventas> lista = new List<Ventas>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -105,7 +105,7 @@ namespace Datos.Daos
                 //cnn.Open();
                 cmd.CommandText = "SELECT * FROM Ventas";
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -122,7 +122,7 @@ namespace Datos.Daos
                     p.Descuento = (double)r.ItemArray[4];
                     lista.Add(p);
                 }
-                conexion.Close();
+                Conexion.Close();
                 return lista;
             }
             catch (Exception)
@@ -135,10 +135,10 @@ namespace Datos.Daos
         }
         public int GetLast()
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -148,7 +148,7 @@ namespace Datos.Daos
                 //cnn.Open();
                 cmd.CommandText = "SELECT * FROM Ventas";
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
                 int id=0;
@@ -165,7 +165,7 @@ namespace Datos.Daos
                     p.Descuento = (double)r.ItemArray[4];
 
                 }
-                conexion.Close();
+                Conexion.Close();
                 return id;
             }
             catch (Exception)
@@ -179,10 +179,10 @@ namespace Datos.Daos
         public List<Ventas> GetFecha(string fecha)
         {
             List<Ventas> lista = new List<Ventas>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -193,7 +193,7 @@ namespace Datos.Daos
                 cmd.CommandText = "SELECT * FROM Ventas where fecha=@fecha";
                 cmd.Parameters.AddWithValue("@fecha", fecha);
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -210,7 +210,7 @@ namespace Datos.Daos
                     p.Descuento = (double)r.ItemArray[4];
                     lista.Add(p);
                 }
-                conexion.Close();
+                Conexion.Close();
                 return lista;
             }
             catch (Exception)
@@ -224,10 +224,10 @@ namespace Datos.Daos
         public List<Ventas> GetIdUsuario(int Id_Usuario)
         {
             List<Ventas> lista = new List<Ventas>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -237,7 +237,7 @@ namespace Datos.Daos
                 //cnn.Open();
                 cmd.CommandText = "SELECT * FROM Ventas where Id_Usuario="+Id_Usuario;
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -254,7 +254,7 @@ namespace Datos.Daos
                     p.Descuento = (double)r.ItemArray[4];
                     lista.Add(p);
                 }
-                conexion.Close();
+                Conexion.Close();
                 return lista;
             }
             catch (Exception)
@@ -268,10 +268,10 @@ namespace Datos.Daos
         public List<Ventas> GetVenta(int Id_Venta)
         {
             List<Ventas> lista = new List<Ventas>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
 
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter();
@@ -281,7 +281,7 @@ namespace Datos.Daos
                 //cnn.Open();
                 cmd.CommandText = "SELECT * FROM Ventas where Id_Venta="+Id_Venta;
                 da.SelectCommand = cmd;
-                da.SelectCommand.Connection = conexion;
+                da.SelectCommand.Connection = Conexion;
                 da.Fill(ds);
                 DataSet datos = ds;
 
@@ -298,7 +298,7 @@ namespace Datos.Daos
                     p.Descuento = (double)r.ItemArray[4];
                     lista.Add(p);
                 }
-                conexion.Close();
+                Conexion.Close();
                 return lista;
             }
             catch (Exception)

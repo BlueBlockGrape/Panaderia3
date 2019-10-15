@@ -11,23 +11,23 @@ namespace Datos.Daos
 {
     public class Panesdao
     {
-        private MySqlConnection conexion = new MySqlConnection();
+        private MySqlConnection Conexion = new MySqlConnection();
 
         public string Insert(Panes p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
-                string insertQuery = "INSERT INTO Panes (Nombre, Precio, Tamaño)" +
+                Conexion.Open();
+                string InsertQuery = "INSERT INTO Panes (Nombre, Precio, Tamaño)" +
                 "VALUES (@Nombre, @Precio, @Tamaño);";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Precio", p.Precio);
-                sqlCom.Parameters.AddWithValue("@Tamaño", p.Tamaño);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(InsertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Precio", p.Precio);
+                SqlCom.Parameters.AddWithValue("@Tamaño", p.Tamaño);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return "si";
             }
             catch (Exception e)
@@ -39,16 +39,16 @@ namespace Datos.Daos
 
         public bool Delete(Panes p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "DELETE FROM Panes WHERE Id_Pan=@Id_Pan ;";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Pan", p.Id_Pan);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Pan", p.Id_Pan);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
 
             }
@@ -62,19 +62,19 @@ namespace Datos.Daos
 
         public bool Update(Panes p)
         {
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
-                conexion.Open();
+                Conexion.Open();
                 string insertQuery = "update Panes set Nombre = @Nombre, Precio = @Precio, Tamaño = @Tamaño where Id_Pan = @Id_Pan";
 
-                MySqlCommand sqlCom = new MySqlCommand(insertQuery, conexion);
-                sqlCom.Parameters.AddWithValue("@Id_Pan", p.Id_Pan);
-                sqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
-                sqlCom.Parameters.AddWithValue("@Precio", p.Precio);
-                sqlCom.Parameters.AddWithValue("@Tamaño", p.Tamaño);
-                sqlCom.ExecuteNonQuery();
-                conexion.Close();
+                MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
+                SqlCom.Parameters.AddWithValue("@Id_Pan", p.Id_Pan);
+                SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
+                SqlCom.Parameters.AddWithValue("@Precio", p.Precio);
+                SqlCom.Parameters.AddWithValue("@Tamaño", p.Tamaño);
+                SqlCom.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception)
@@ -87,8 +87,8 @@ namespace Datos.Daos
 
         public List<Panes> GetAll()
         {
-            List<Panes> lista = new List<Panes>();
-            conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            List<Panes> Lista = new List<Panes>();
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
 
@@ -99,7 +99,7 @@ namespace Datos.Daos
                 throw;
             }
 
-            conexion.Open();
+            Conexion.Open();
 
             DataSet ds = new DataSet();
             MySqlDataAdapter da = new MySqlDataAdapter();
@@ -109,7 +109,7 @@ namespace Datos.Daos
             //cnn.Open();
             cmd.CommandText = "SELECT * FROM Panes";
             da.SelectCommand = cmd;
-            da.SelectCommand.Connection = conexion;
+            da.SelectCommand.Connection = Conexion;
             da.Fill(ds);
             DataSet datos = ds;
 
@@ -123,11 +123,11 @@ namespace Datos.Daos
                 p.Nombre = (string)r.ItemArray[1];
                 p.Precio = (double)r.ItemArray[2];
                 p.Tamaño = (string)r.ItemArray[3];
-                lista.Add(p);
+                Lista.Add(p);
             }
-            conexion.Close();
+            Conexion.Close();
 
-            return lista;
+            return Lista;
         }
 
 

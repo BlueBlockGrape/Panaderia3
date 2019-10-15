@@ -58,11 +58,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ventanaAgregarUsuario.cs">
+    <Compile Include="VentanaAgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaAgregarUsuario.Designer.cs">
-      <DependentUpon>ventanaAgregarUsuario.cs</DependentUpon>
+    <Compile Include="VentanaAgregarUsuario.Designer.cs">
+      <DependentUpon>VentanaAgregarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaComprar.cs">
       <SubType>Form</SubType>
@@ -70,11 +70,11 @@
     <Compile Include="VentanaComprar.Designer.cs">
       <DependentUpon>VentanaComprar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanaControl.cs">
+    <Compile Include="VentanaControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaControl.Designer.cs">
-      <DependentUpon>ventanaControl.cs</DependentUpon>
+    <Compile Include="VentanaControl.Designer.cs">
+      <DependentUpon>VentanaControl.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaCorte.cs">
       <SubType>Form</SubType>
@@ -94,23 +94,23 @@
     <Compile Include="VentanaEditarVenta.Designer.cs">
       <DependentUpon>VentanaEditarVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanaEliminarUsuario.cs">
+    <Compile Include="VentanaEliminarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaEliminarUsuario.Designer.cs">
-      <DependentUpon>ventanaEliminarUsuario.cs</DependentUpon>
+    <Compile Include="VentanaEliminarUsuario.Designer.cs">
+      <DependentUpon>VentanaEliminarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanaInventarios.cs">
+    <Compile Include="VentanaInventarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaInventarios.designer.cs">
-      <DependentUpon>ventanaInventarios.cs</DependentUpon>
+    <Compile Include="VentanaInventarios.designer.cs">
+      <DependentUpon>VentanaInventarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanaMenu.cs">
+    <Compile Include="VentanaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaMenu.Designer.cs">
-      <DependentUpon>ventanaMenu.cs</DependentUpon>
+    <Compile Include="VentanaMenu.Designer.cs">
+      <DependentUpon>VentanaMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaPanesAdd.cs">
       <SubType>Form</SubType>
@@ -166,11 +166,11 @@
     <Compile Include="VentanaRegistros.Designer.cs">
       <DependentUpon>VentanaRegistros.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanaUsuario.cs">
+    <Compile Include="VentanaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanaUsuario.Designer.cs">
-      <DependentUpon>ventanaUsuario.cs</DependentUpon>
+    <Compile Include="VentanaUsuario.Designer.cs">
+      <DependentUpon>VentanaUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaVentas.cs">
       <SubType>Form</SubType>
@@ -191,14 +191,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ventanaAgregarUsuario.resx">
-      <DependentUpon>ventanaAgregarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaAgregarUsuario.resx">
+      <DependentUpon>VentanaAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaComprar.resx">
       <DependentUpon>VentanaComprar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanaControl.resx">
-      <DependentUpon>ventanaControl.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaControl.resx">
+      <DependentUpon>VentanaControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaCorte.resx">
       <DependentUpon>VentanaCorte.cs</DependentUpon>
@@ -209,14 +209,14 @@
     <EmbeddedResource Include="VentanaEditarVenta.resx">
       <DependentUpon>VentanaEditarVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanaEliminarUsuario.resx">
-      <DependentUpon>ventanaEliminarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaEliminarUsuario.resx">
+      <DependentUpon>VentanaEliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanaInventarios.resx">
-      <DependentUpon>ventanaInventarios.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaInventarios.resx">
+      <DependentUpon>VentanaInventarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanaMenu.resx">
-      <DependentUpon>ventanaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaMenu.resx">
+      <DependentUpon>VentanaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaPanesAdd.resx">
       <DependentUpon>VentanaPanesAdd.cs</DependentUpon>
@@ -245,8 +245,8 @@
     <EmbeddedResource Include="VentanaRegistros.resx">
       <DependentUpon>VentanaRegistros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanaUsuario.resx">
-      <DependentUpon>ventanaUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaUsuario.resx">
+      <DependentUpon>VentanaUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaVentas.resx">
       <DependentUpon>VentanaVentas.cs</DependentUpon>

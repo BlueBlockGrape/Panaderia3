@@ -61,7 +61,7 @@ namespace Panaderia
                {
                     MessageBox.Show("Permiso concedido ", "Éxito");
                     List<Ventas> listav = new List<Ventas>();
-                    ventanaMenu ven = new ventanaMenu(g,listav);
+                    VentanaMenu ven = new VentanaMenu(g,listav);
                    
                     this.Hide();
                     ven.Show();
