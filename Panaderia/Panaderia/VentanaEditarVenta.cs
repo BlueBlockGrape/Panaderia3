@@ -33,8 +33,8 @@ namespace Panaderia
         private void VentanaEditarVenta_Load(object sender, EventArgs e)
         {
             Panesdao pn = new Panesdao();
-            lista = pd.getAll(venta.Id_Venta);
-            dtgPanes.DataSource = pn.getAll();
+            lista = pd.GetAll(venta.Id_Venta);
+            dtgPanes.DataSource = pn.GetAll();
            // MessageBox.Show(venta.Id_Venta + "");
             lblFecha.Text = venta.Fecha.Year+"/"+venta.Fecha.Month+"/"+venta.Fecha.Day;
             lblVenta.Text = venta.Id_Venta+"";
@@ -141,17 +141,17 @@ namespace Panaderia
             }
             else
             {
-                pd.delete(venta.Id_Venta);
+                pd.Delete(venta.Id_Venta);
 
                 for (int i = 0; i < lista.Count(); i++)
                 {
-                    pd.insert(lista.ElementAt(i));
+                    pd.Insert(lista.ElementAt(i));
                 }
 
                 Ventasdao vd = new Ventasdao();
                 venta.Total = total();
                 venta.Descuento = des;
-                vd.update(venta);
+                vd.Update(venta);
                 actualizarcorte(venta.Id_Venta, des);
                 VentanaVentas v = new VentanaVentas(usuario, listav);
 

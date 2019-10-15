@@ -35,7 +35,7 @@ namespace Panaderia
             else
             {
                 p.Id_Proveedor = int.Parse(txtDel.Text);
-                pd.delete(p);
+                pd.Delete(p);
                 MessageBox.Show("Registro Eliminado", "Éxito");
                 txtDel.Text = "";
             }
@@ -50,7 +50,7 @@ namespace Panaderia
 
         private void VentanaProveedorDelete_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = new Proveedordao().getAll();
+            dataGridView1.DataSource = new Proveedordao().GetAll();
         }
 
         private void txtDel_KeyPress(object sender, KeyPressEventArgs e)

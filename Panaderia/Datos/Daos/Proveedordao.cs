@@ -12,7 +12,7 @@ namespace Datos.Daos
     public class Proveedordao
     {
         private MySqlConnection conexion = new MySqlConnection();
-        public string insert(Proveedor p)
+        public string Insert(Proveedor p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -37,7 +37,7 @@ namespace Datos.Daos
             }
         }
 
-        public bool delete(Proveedor p)
+        public bool Delete(Proveedor p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -59,7 +59,7 @@ namespace Datos.Daos
             }
         }
 
-        public bool update(Proveedor p)
+        public bool Update(Proveedor p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -85,7 +85,7 @@ namespace Datos.Daos
 
         }
 
-        public List<Proveedor> getAll()
+        public List<Proveedor> GetAll()
         {
             List<Proveedor> lista = new List<Proveedor>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";

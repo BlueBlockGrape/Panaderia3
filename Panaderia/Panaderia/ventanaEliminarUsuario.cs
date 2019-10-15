@@ -35,7 +35,7 @@ namespace Panaderia
                 int del = int.Parse(txtID.Text);
                 Usuario obj = new Usuario();
                 Usuariodao vd = new Usuariodao();
-                bool g = vd.delete(del);
+                bool g = vd.Delete(del);
 
                 if (g)
                 {

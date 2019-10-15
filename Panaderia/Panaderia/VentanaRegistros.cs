@@ -29,9 +29,9 @@ namespace Panaderia
 
         private void VentanaRegistros_Load(object sender, EventArgs e)
         {
-            dtgVentas.DataSource = vd.getAll();
+            dtgVentas.DataSource = vd.GetAll();
             Usuariodao z = new Usuariodao();
-            List<Usuario> us = z.getAll();
+            List<Usuario> us = z.GetAll();
             for (int i = 0; i < us.Count; i++)
             {
                 cmcUsuario.Items.Add(us.ElementAt(i).Id_Usuario);
@@ -43,8 +43,8 @@ namespace Panaderia
         {
             int indice = dtgVentas.CurrentRow.Index;
             int id = int.Parse(dtgVentas.Rows[indice].Cells[0].Value.ToString());
-            pd.delete(id);
-            vd.delete(id);
+            pd.Delete(id);
+            vd.Delete(id);
             for (int i = 0; i < listav.Count(); i++)
             {
                 if (listav.ElementAt(i).Id_Venta == id)
@@ -54,7 +54,7 @@ namespace Panaderia
                 }
             }
             dtgVentas.DataSource = null;
-            dtgVentas.DataSource = vd.getAll();
+            dtgVentas.DataSource = vd.GetAll();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace Panaderia
         private void btnBuscaraño_Click(object sender, EventArgs e)
         {
             string fecha = dttFecha.Value.Year + "/" + dttFecha.Value.Month + "/" + dttFecha.Value.Day;
-            List<Ventas> v= vd.getFecha(fecha);
+            List<Ventas> v= vd.GetFecha(fecha);
             
             if (v.Count == 0)
             {
@@ -107,7 +107,7 @@ namespace Panaderia
             else
             {
                 int id = int.Parse(cmcUsuario.Text);
-                List<Ventas> v = vd.getIdUsuario(id);
+                List<Ventas> v = vd.GetIdUsuario(id);
 
                 if (v.Count == 0)
                 {
@@ -130,7 +130,7 @@ namespace Panaderia
             else
             {
                 int id = int.Parse(txtVenta.Text);
-                List<Ventas> v = vd.getVenta(id);
+                List<Ventas> v = vd.GetVenta(id);
 
                 if (v.Count == 0)
                 {

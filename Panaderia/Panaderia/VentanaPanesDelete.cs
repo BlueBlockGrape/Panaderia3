@@ -35,7 +35,7 @@ namespace Panaderia
             else
             {               
                 p.Id_Pan = int.Parse(txtDel.Text);                
-               if(pd.delete(p)) {
+               if(pd.Delete(p)) {
 
                 }
                 MessageBox.Show("Registro Eliminado", "Éxito");
@@ -52,7 +52,7 @@ namespace Panaderia
 
         private void VentanaPanesDelete_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = new Panesdao().getAll();
+            dataGridView1.DataSource = new Panesdao().GetAll();
         }
 
         private void txtDel_KeyPress(object sender, KeyPressEventArgs e)

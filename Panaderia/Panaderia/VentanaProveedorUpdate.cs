@@ -44,7 +44,7 @@ namespace Panaderia
 
         private void VentanaProveedorUpdate_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = new Proveedordao().getAll();
+            dataGridView1.DataSource = new Proveedordao().GetAll();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -71,14 +71,14 @@ namespace Panaderia
                 p.Domicilio = txtDomicilio.Text;
                 p.Telefono = txtTel.Text;
                 p.Productos = txtProducto.Text;
-                pd.update(p);
+                pd.Update(p);
                 MessageBox.Show("Registro Modificado", "Éxito");
                 txtID.Text = "";
                 txtNombre.Text = "";
                 txtDomicilio.Text = "";
                 txtTel.Text = "";
                 txtProducto.Text = "";
-                dataGridView1.DataSource = new Proveedordao().getAll();
+                dataGridView1.DataSource = new Proveedordao().GetAll();
             }
         }
 

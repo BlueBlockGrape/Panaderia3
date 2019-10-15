@@ -92,7 +92,7 @@ namespace Datos.Daos
 
 
 
-        public bool delete(int id)
+        public bool Delete(int id)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -119,7 +119,7 @@ namespace Datos.Daos
 
 
 
-        public bool update(Usuario p)
+        public bool Update(Usuario p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -198,7 +198,7 @@ namespace Datos.Daos
 
 
         }
-        public List<Usuario> getAll()
+        public List<Usuario> GetAll()
         {
             List<Usuario> lista = new List<Usuario>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";

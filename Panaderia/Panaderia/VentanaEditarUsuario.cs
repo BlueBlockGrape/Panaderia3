@@ -65,7 +65,7 @@ namespace Panaderia
                 obj.Direccion = txtDireccion.Text;
                 obj.Administrador = x;
                 obj.Id_Usuario = int.Parse(cmbUsuario.Text);
-                bool g = vd.update(obj);
+                bool g = vd.Update(obj);
                 if (g)
                 {
                     MessageBox.Show("Se modifico el registro correctamente", "Correcto");
@@ -145,7 +145,7 @@ namespace Panaderia
         {
             cmbUsuario.Enabled = true;
             Usuariodao z = new Usuariodao();
-            List<Usuario> us = z.getAll();
+            List<Usuario> us = z.GetAll();
             for(int i = 0; i < us.Count; i++)
             {
                 cmbUsuario.Items.Add(us.ElementAt(i).Id_Usuario);

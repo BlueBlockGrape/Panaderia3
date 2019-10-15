@@ -44,7 +44,7 @@ namespace Panaderia
                 p.Nombre = txtNombre.Text;
                 p.Precio = double.Parse(txtPrecio.Text);
                 p.Tamaño = cmbTam.Text;
-                pd.insert(p);                
+                pd.Insert(p);                
                 MessageBox.Show("Registro Guardado", "Éxito");
                 txtNombre.Text = "";
                 txtPrecio.Text = "";

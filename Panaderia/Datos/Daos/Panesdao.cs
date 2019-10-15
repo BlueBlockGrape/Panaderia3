@@ -13,7 +13,7 @@ namespace Datos.Daos
     {
         private MySqlConnection conexion = new MySqlConnection();
 
-        public string insert(Panes p)
+        public string Insert(Panes p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -37,7 +37,7 @@ namespace Datos.Daos
             }
         }
 
-        public bool delete(Panes p)
+        public bool Delete(Panes p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -60,7 +60,7 @@ namespace Datos.Daos
 
         }
 
-        public bool update(Panes p)
+        public bool Update(Panes p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -85,7 +85,7 @@ namespace Datos.Daos
 
         }
 
-        public List<Panes> getAll()
+        public List<Panes> GetAll()
         {
             List<Panes> lista = new List<Panes>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";

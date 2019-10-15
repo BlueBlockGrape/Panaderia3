@@ -38,7 +38,7 @@ namespace Panaderia
 
         private void VentanaPanesUpdate_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = new Panesdao().getAll();
+            dataGridView1.DataSource = new Panesdao().GetAll();
             cmbTam.Text = "CHICO";
         }
 
@@ -63,13 +63,13 @@ namespace Panaderia
                 p.Nombre = txtNombre.Text;
                 p.Precio = double.Parse(txtPrecio.Text);
                 p.Tamaño = cmbTam.Text;
-                pd.update(p);
+                pd.Update(p);
                 MessageBox.Show("Registro Modificado", "Éxito");
                 txtID.Text = "";
                 txtNombre.Text = "";
                 txtPrecio.Text = "";
                 cmbTam.Text = "-Selecciona una opción-";
-                dataGridView1.DataSource = new Panesdao().getAll();
+                dataGridView1.DataSource = new Panesdao().GetAll();
             }
         }
 

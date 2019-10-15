@@ -13,7 +13,7 @@ namespace Datos.Daos
     {
         private MySqlConnection conexion = new MySqlConnection();
 
-        public bool insert(Ventas p)
+        public bool Insert(Ventas p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -42,7 +42,7 @@ namespace Datos.Daos
         }
 
 
-        public bool delete(int id)
+        public bool Delete(int id)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -65,7 +65,7 @@ namespace Datos.Daos
            
         }
 
-        public bool update(Ventas p)
+        public bool Update(Ventas p)
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -89,7 +89,7 @@ namespace Datos.Daos
             
         }
 
-        public List<Ventas> getAll()
+        public List<Ventas> GetAll()
         {
             List<Ventas> lista = new List<Ventas>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
@@ -133,7 +133,7 @@ namespace Datos.Daos
 
             
         }
-        public int getLast()
+        public int GetLast()
         {
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
@@ -176,7 +176,7 @@ namespace Datos.Daos
 
 
         }
-        public List<Ventas> getFecha(string fecha)
+        public List<Ventas> GetFecha(string fecha)
         {
             List<Ventas> lista = new List<Ventas>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
@@ -221,7 +221,7 @@ namespace Datos.Daos
 
 
         }
-        public List<Ventas> getIdUsuario(int Id_Usuario)
+        public List<Ventas> GetIdUsuario(int Id_Usuario)
         {
             List<Ventas> lista = new List<Ventas>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
@@ -265,7 +265,7 @@ namespace Datos.Daos
 
             
         }
-        public List<Ventas> getVenta(int Id_Venta)
+        public List<Ventas> GetVenta(int Id_Venta)
         {
             List<Ventas> lista = new List<Ventas>();
             conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";

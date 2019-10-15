@@ -65,10 +65,10 @@ namespace Panaderia
                 pagar = double.Parse(txtPago.Text);
             }
             if ((venta.Total-venta.Descuento) <= pagar) {
-                vd.insert(venta);
+                vd.Insert(venta);
                 for (int i = 0; i < lista.Count(); i++)
                 {
-                    pd.insert(lista.ElementAt(i));
+                    pd.Insert(lista.ElementAt(i));
                 }
                 MessageBox.Show("Cambio= "+(pagar - venta.Total+venta.Descuento));
                 listav.Add(venta);

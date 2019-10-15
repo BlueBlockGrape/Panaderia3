@@ -13,7 +13,7 @@ namespace Datos.Daos
     {
         private MySqlConnection conexion = new MySqlConnection();
 
-        public bool insert(Pertenece p)
+        public bool Insert(Pertenece p)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace Datos.Daos
         }
 
 
-        public bool delete(int Id_Venta,int Id_Pan)
+        public bool Delete(int Id_Venta,int Id_Pan)
         {
             try
             {
@@ -81,7 +81,7 @@ namespace Datos.Daos
             }
 
         }
-        public bool delete(int Id_Venta)
+        public bool Delete(int Id_Venta)
         {
             try
             {
@@ -112,7 +112,7 @@ namespace Datos.Daos
 
         }
 
-        public bool update(Pertenece p)
+        public bool Update(Pertenece p)
         {
             try
             {
@@ -147,7 +147,7 @@ namespace Datos.Daos
 
         }
 
-        public List<Pertenece> getAll(int Id_Venta)
+        public List<Pertenece> GetAll(int Id_Venta)
         {
             List<Pertenece> lista = new List<Pertenece>();
             try

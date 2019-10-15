@@ -22,7 +22,7 @@ namespace Panaderia
         public VentanaVentas(Usuario p,List<Ventas> listav)
         {
             vd = new Ventasdao();
-            id = vd.getLast()+1;
+            id = vd.GetLast()+1;
             usuario = p;
             lista = new List<Pertenece>();
             this.listav = listav;
@@ -33,7 +33,7 @@ namespace Panaderia
         {
             lblNombre.Text = usuario.Nombre;
             Panesdao pd = new Panesdao();
-            dtgPanes.DataSource = pd.getAll();
+            dtgPanes.DataSource = pd.GetAll();
 
         }
 

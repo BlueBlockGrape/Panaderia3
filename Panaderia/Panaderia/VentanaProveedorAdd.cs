@@ -45,7 +45,7 @@ namespace Panaderia
                 p.Domicilio = txtDomicilio.Text;
                 p.Telefono = txtTel.Text;
                 p.Productos = txtProducto.Text;
-                pd.insert(p);                
+                pd.Insert(p);                
                 MessageBox.Show("Registro Guardado", "Éxito");
                 txtNombre.Text = "";
                 txtDomicilio.Text = "";
