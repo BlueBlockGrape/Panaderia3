@@ -52,3 +52,40 @@ C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.V
 C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorMenu.resources
 C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorUpdate.resources
 C:\Users\Getse\Desktop\Ing de Software\Panaderia\Panaderia\obj\Debug\Panaderia.ventanaInventarios.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.exe.config
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.exe
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.pdb
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Datos.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\MySql.Data.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Google.Protobuf.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Renci.SshNet.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\Datos.pdb
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\MySql.Data.xml
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csprojAssemblyReference.cache
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.Login.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.Properties.Resources.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaAgregarUsuario.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaComprar.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaControl.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaCorte.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarUsuario.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarVenta.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEliminarUsuario.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaInventarios.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaMenu.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesAdd.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesDelete.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesMenu.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesUpdate.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorAdd.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorDelete.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorMenu.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorUpdate.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaRegistros.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaUsuario.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.exe
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
