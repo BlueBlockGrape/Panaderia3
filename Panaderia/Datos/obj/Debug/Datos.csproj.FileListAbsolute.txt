@@ -29,3 +29,9 @@ C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProye
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Datos\obj\Debug\Datos.dll
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Datos\obj\Debug\Datos.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\bin\Debug\Datos.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\bin\Debug\Datos.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\obj\Debug\Datos.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Datos\obj\Debug\Datos.pdb

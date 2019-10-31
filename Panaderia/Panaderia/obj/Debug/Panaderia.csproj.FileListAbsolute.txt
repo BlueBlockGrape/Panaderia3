@@ -89,3 +89,42 @@ C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProye
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.exe
 C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.exe.config
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\Datos.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\Datos.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csprojAssemblyReference.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.Login.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.Properties.Resources.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaAgregarUsuario.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaComprar.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaControl.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaCorte.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarUsuario.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEditarVenta.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaEliminarUsuario.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaInventarios.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaMenu.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesAdd.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesDelete.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesMenu.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaPanesUpdate.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorAdd.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorDelete.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorMenu.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaProveedorUpdate.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaRegistros.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaUsuario.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.GenerateResource.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CoreCompileInputs.cache
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.exe
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.es.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.pa-Guru.resources
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\es\Panaderia.resources.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\bin\Debug\pa-Guru\Panaderia.resources.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\es\Panaderia.resources.dll
+C:\Users\Getse\Desktop\Panaderia\Panaderia3\Panaderia\Panaderia\obj\Debug\pa-Guru\Panaderia.resources.dll

@@ -141,5 +141,58 @@ namespace Panaderia
             this.WindowState = FormWindowState.Minimized;
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Usuario obj = new Usuario();
+            Usuariodao vd = new Usuariodao();
+            //String z = Tipotxt.SelectedValue.ToString();
+            String z = Tipotxt.SelectedItem.ToString();
+            if (Usertxt.Text.Equals("") || Passtxt.Text.Equals("") || z.Equals(""))
+            {
+                MessageBox.Show("Por favor, introduzca un ID válido", "ERROR*");
+            }
+            else
+            {
+                bool x = false;
+                if (z.Equals("ADMINISTRADOR"))
+                {
+                    x = true;
+                }
+
+                obj.Id_Usuario = int.Parse(Usertxt.Text);
+                obj.Contraseña = Passtxt.Text;
+                obj.Administrador = x;
+                Usuario g = vd.Entrar(obj);
+
+
+                // string c = "";
+                bool val = g.Administrador;
+                /*  if (val)
+                  {
+                     c = "ADMINISTRADOR";
+                  }
+                  else
+                  {
+                      c = "EMPLEADO";
+                  }*/
+
+
+                //  MessageBox.Show();
+                if (g.Contraseña == obj.Contraseña && x == val)
+                {
+                    MessageBox.Show("Permiso concedido ", "Éxito");
+                    List<Ventas> listav = new List<Ventas>();
+                    VentanaMenu ven = new VentanaMenu(g, listav);
+
+                    this.Hide();
+                    ven.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario, Contraseña o Tipo de Usuario incorrectos ", "*Error");
+                }
+            }
+        }
     }
 }

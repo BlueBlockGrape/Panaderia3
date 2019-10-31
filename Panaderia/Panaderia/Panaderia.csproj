@@ -248,6 +248,12 @@
     <EmbeddedResource Include="VentanaUsuario.resx">
       <DependentUpon>VentanaUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VentanaVentas.es.resx">
+      <DependentUpon>VentanaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaVentas.pa-Guru.resx">
+      <DependentUpon>VentanaVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaVentas.resx">
       <DependentUpon>VentanaVentas.cs</DependentUpon>
     </EmbeddedResource>

@@ -85,9 +85,7 @@ namespace Panaderia
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -97,9 +95,21 @@ namespace Panaderia
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnMaximizar.Visible = true;
-            btnRestaurar.Visible = false;
+            
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            button1_Click(sender, e);
+            txtApellidos.Text = "";
+            txtDireccion.Text = "";
+            txtNombre.Text = "";
+            txtPassword.Text = "";
         }
     }
 }

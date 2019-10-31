@@ -208,9 +208,7 @@ namespace Panaderia
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -220,9 +218,7 @@ namespace Panaderia
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnMaximizar.Visible = true;
-            btnRestaurar.Visible = false;
+            
         }
     }
 }

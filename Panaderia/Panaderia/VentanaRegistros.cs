@@ -77,7 +77,7 @@ namespace Panaderia
 
             VentanaEditarVenta v = new VentanaEditarVenta(usuario, listav, venta);
             v.Show();
-            this.Hide();
+            
         }
 
         private void btnBuscaraño_Click(object sender, EventArgs e)

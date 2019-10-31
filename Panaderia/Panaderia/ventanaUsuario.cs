@@ -63,5 +63,10 @@ namespace Panaderia
         {
 
         }
+
+        private void VentanaUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

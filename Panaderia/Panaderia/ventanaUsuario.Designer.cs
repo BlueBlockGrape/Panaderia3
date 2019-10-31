@@ -79,20 +79,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ventanaUsuario
+            // VentanaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Panaderia.Properties.Resources.pan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(340, 240);
+            this.ClientSize = new System.Drawing.Size(499, 372);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ventanaUsuario";
+            this.Name = "VentanaUsuario";
             this.Text = "Menu Usuarios";
+            this.Load += new System.EventHandler(this.VentanaUsuario_Load);
             this.ResumeLayout(false);
 
         }

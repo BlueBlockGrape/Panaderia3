@@ -46,8 +46,7 @@ namespace Panaderia
         private void btnRegresar_Click(object sender, EventArgs e)
         {
 
-            VentanaRegistros v = new VentanaRegistros(listav, usuario);
-            v.Show();
+            
             this.Hide();
         }
 
@@ -235,9 +234,7 @@ namespace Panaderia
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRegresar.Visible = true;
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -247,9 +244,17 @@ namespace Panaderia
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnMaximizar.Visible = true;
-            btnRegresar.Visible = false;
+            
+        }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

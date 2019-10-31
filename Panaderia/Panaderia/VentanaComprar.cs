@@ -49,8 +49,7 @@ namespace Panaderia
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            VentanaVentas v = new VentanaVentas(usuario,listav);
-            v.Show();
+           
             this.Hide();
         }
 
@@ -74,7 +73,7 @@ namespace Panaderia
                 listav.Add(venta);
                 VentanaVentas v = new VentanaVentas(usuario,listav);
                 
-                v.Show();
+                
                 this.Hide();
             }
             else
@@ -126,7 +125,7 @@ namespace Panaderia
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
+            
             btnRegresar.Visible = true;
         }
 
@@ -138,7 +137,7 @@ namespace Panaderia
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-            btnMaximizar.Visible = true;
+            
             btnRegresar.Visible = false;
         }
     }

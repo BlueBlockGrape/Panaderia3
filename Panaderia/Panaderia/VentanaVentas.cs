@@ -89,7 +89,7 @@ namespace Panaderia
             lista.RemoveAt(Indice);
 
         }
-
+        
         public double total()
         {
             double total = 0;
@@ -148,7 +148,9 @@ namespace Panaderia
                 
                 VentanaComprar v = new VentanaComprar(venta, usuario, lista, listav);
                 v.Show();
-                this.Hide();
+                dtgCarrito.DataSource = null;
+                lblTotal.Text = "";
+
             }
         }
 

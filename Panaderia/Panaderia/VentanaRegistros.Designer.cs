@@ -32,7 +32,6 @@
             this.dtgVentas = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.dttFecha = new System.Windows.Forms.DateTimePicker();
             this.btnBuscaraño = new System.Windows.Forms.Button();
             this.btnBuscarUsuario = new System.Windows.Forms.Button();
@@ -44,7 +43,7 @@
             // 
             // dtgVentas
             // 
-            this.dtgVentas.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgVentas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgVentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgVentas.Location = new System.Drawing.Point(1, 1);
@@ -75,17 +74,6 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(671, 405);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(117, 33);
-            this.btnRegresar.TabIndex = 9;
-            this.btnRegresar.Text = "regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // dttFecha
             // 
@@ -150,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Panaderia.Properties.Resources.pan;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(808, 450);
             this.Controls.Add(this.cmcUsuario);
@@ -159,11 +147,11 @@
             this.Controls.Add(this.btnBuscarUsuario);
             this.Controls.Add(this.btnBuscaraño);
             this.Controls.Add(this.dttFecha);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.dtgVentas);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaRegistros";
             this.Text = "Registros";
@@ -179,7 +167,6 @@
         private System.Windows.Forms.DataGridView dtgVentas;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DateTimePicker dttFecha;
         private System.Windows.Forms.Button btnBuscaraño;
         private System.Windows.Forms.Button btnBuscarUsuario;
