@@ -53,9 +53,13 @@ namespace Panaderia
 
         private void btnCorte_Click(object sender, EventArgs e)
         {
-            Login l = new Login();
-            l.Show();
-            this.Hide();
+            /*  Login l = new Login();
+                l.Show();
+              this.Close();
+               this.Hide();*/
+            Application.Exit();
+
+            //  VentanaCorte_Load(sender, e);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

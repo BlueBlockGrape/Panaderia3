@@ -220,5 +220,27 @@ namespace Panaderia
         {
             
         }
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            btnAgregar_Click(sender, e);
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            btnEditar_Click(sender, e);
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            btnEliminar_Click(sender, e);
+        }
+
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
+        {
+            txtNombre.ResetText();
+            txtDescripcion.ResetText();
+            txtExistencias.ResetText();
+        }
     }
 }

@@ -256,5 +256,10 @@ namespace Panaderia
         {
             this.Hide();
         }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            btnEliminar_Click(sender, e);
+        }
     }
 }

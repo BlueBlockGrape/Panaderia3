@@ -81,5 +81,10 @@ namespace Panaderia
         {
             
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            button1_Click(sender,e);
+        }
     }
 }
