@@ -13,6 +13,16 @@ using System.Windows.Forms;
 namespace Panaderia
 {
 
+    /*
+     * Clase para la eliminación de un usuario
+     * creacion de variables y metodos para la manipulación de información relacionada con la eliminación de usuarios,
+     * se implementaron los métodos necesarios para la manipulacion de la ventana
+     * funcionalidades básicas para la manipuclación de los componentes de la ventana,
+     * métodos para la manipulación de datos y consultas con la base de datos a través de otras clases
+     * como los modelos y los DAOS, verificacion de campos vacios a través de consultas en distintos metodos.
+     */
+
+
     public partial class VentanaEliminarUsuario : Form
     {
         private Usuario usuario;

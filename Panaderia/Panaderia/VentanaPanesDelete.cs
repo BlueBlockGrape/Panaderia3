@@ -12,6 +12,17 @@ using Datos.Modelo;
 
 namespace Panaderia
 {
+
+    /*
+     * Clase para la sección de eliminación de panes
+     * creacion de variables y metodos para la manipulación de información relacionada con la parte de eliminacion
+     *de panes de la base de datos de forma que no estaran disponibles para su venta ni en la abse de datos,
+     * se implementaron los métodos necesarios para la manipulacion de la ventana
+     * funcionalidades básicas para la manipuclación de los componentes de la ventana,
+     * métodos para la manipulación de datos y consultas con la base de datos a través de otras clases
+     * como los modelos y los DAOS, verificacion de campos vacios a través de consultas en distintos metodos.
+     */
+
     public partial class VentanaPanesDelete : Form
     {
         private Usuario usuario;

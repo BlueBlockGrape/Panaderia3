@@ -12,6 +12,17 @@ using Datos.Modelo;
 
 namespace Panaderia
 {
+
+    /*
+     * Clase para la edición de ventas
+     * creacion de variables y metodos para la manipulación de información relacionada con las ventas,
+     * se implementaron los métodos necesarios para la manipulacion de la ventana
+     * funcionalidades básicas para la manipuclación de los componentes de la ventana,
+     * métodos para la manipulación de datos y consultas con la base de datos a través de otras clases
+     * como los modelos y los DAOS, verificacion de campos vacios a través de consultas en distintos metodos.
+     */ 
+
+
     public partial class VentanaEditarVenta : Form
     {
         Usuario usuario;
@@ -260,6 +271,11 @@ namespace Panaderia
         private void btnEliminar_Click_1(object sender, EventArgs e)
         {
             btnEliminar_Click(sender, e);
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

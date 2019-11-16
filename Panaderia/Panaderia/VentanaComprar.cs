@@ -12,6 +12,11 @@ using Datos.Daos;
 
 namespace Panaderia
 {
+
+    /*
+         * Métodos de llamada a la otros componentes como los modelos y los DAOS
+         * para realizar consultas
+   */
     public partial class VentanaComprar : Form
     {
         private Ventas venta;
@@ -37,6 +42,11 @@ namespace Panaderia
             pd = new Pertenecedao();
         }
 
+
+        /*
+         * Métodos para los botones en la parte superior derecha y
+         * para poder cambiar de ventana.
+         */
         private void VentanaComprar_Load(object sender, EventArgs e)
         {
 
@@ -52,6 +62,11 @@ namespace Panaderia
            
             this.Hide();
         }
+
+        /*
+         * método para llamar al método para pagar y
+         * para limpiar los campos de texto de la aplicación.
+         */
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
@@ -111,6 +126,12 @@ namespace Panaderia
                 e.Handled = true;
             }
         }
+
+
+        /*
+        * Métodos para los botones en la parte superior derecha y
+        * para poder cambiar de ventana.
+        */
 
         private void txtPago_TextChanged(object sender, EventArgs e)
         {

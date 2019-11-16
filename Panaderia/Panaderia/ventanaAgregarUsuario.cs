@@ -12,6 +12,13 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
+
+    /*
+     * Declaración de componentes y elementos
+     * de la pantalla para el manejo de datos
+     */ 
+
+
     public partial class VentanaAgregarUsuario : Form
     {
         private Usuario usuario;
@@ -22,6 +29,12 @@ namespace Panaderia
             usuario = p;
             InitializeComponent();
         }
+
+
+        /*
+         * Métodos de llamada a la otros componentes como los modelos y los DAOS
+         * para realizar consultas
+         */ 
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -73,6 +86,11 @@ namespace Panaderia
             
         }
 
+        /*
+         * Métodos para los botones en la parte superior derecha y
+         * para poder cambiar de ventana.
+         */ 
+
         private void ventanaAgregarUsuario_Load(object sender, EventArgs e)
         {
             cmbTipo.Text = "ADMINISTRADOR";
@@ -102,6 +120,11 @@ namespace Panaderia
         {
 
         }
+
+        /*
+         * método para llamar a agregar a un nuevo usuario y
+         * para limpiar los campos de texto de la aplicación.
+         */
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {

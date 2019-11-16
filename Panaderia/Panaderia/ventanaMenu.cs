@@ -11,6 +11,15 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
+
+    /*
+     * Clase principal para la parte del menú de la aplicación, esta seccion se visualizara en todas 
+     * las ventanas cuando un usuario logre entrar de forma correcta con sus credenciales.
+     * Métodos implementados para el cambio de de ventanas y utilizacion de cada una de las partes
+     * que se encuentran dentro del menú de la aplicación.
+     */
+
+
     public partial class VentanaMenu : Form
     {
         private Usuario usuario;

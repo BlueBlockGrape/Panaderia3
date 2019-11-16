@@ -19,6 +19,11 @@ namespace Panaderia
             InitializeComponent();
         }
 
+        /*
+         * Métodos de verificación y funcionalidad de los botones de la pantalla de login
+         * además de la funcionalidad con la consulta de bases de datos y
+         * algunos elementos relacionados al manejo de la interfaz
+        */
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -142,6 +147,12 @@ namespace Panaderia
 
         }
 
+
+        /*
+         * Método del botón para saber si se conceen permisos para entrar a la aplicación
+         * utiliza llamadas a los DAOS y Modelos necesarios para verificar en la base de datos
+         * para que se pueda obtener una respuesta y en base a eso otorgar o denegar los permisos a la aplicación
+        */
         private void button1_Click_1(object sender, EventArgs e)
         {
             Usuario obj = new Usuario();

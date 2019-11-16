@@ -12,6 +12,11 @@ using Datos.Daos;
 
 namespace Panaderia
 {
+
+    /**
+     * Creacion de componentes de la pantalla y elementos para
+     * el manejo de datos
+     */ 
     public partial class VentanaControl : Form
     {
         private int ind;
@@ -24,6 +29,11 @@ namespace Panaderia
             this.ind = ind;
             InitializeComponent();
         }
+
+        /*
+         * MEtodo de verificacion de usuario
+         * 
+         */ 
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -104,6 +114,12 @@ namespace Panaderia
                 }
             }
         }
+
+
+        /*
+        * Métodos para los botones en la parte superior derecha y
+        * para poder cambiar de ventana.
+        */
 
         private void ventanaControl_Load(object sender, EventArgs e)
         {

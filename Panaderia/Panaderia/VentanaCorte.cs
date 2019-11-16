@@ -12,6 +12,11 @@ using Datos.Daos;
 
 namespace Panaderia
 {
+
+    /*
+     * Elementos principales de la clase para la manipulación de datos
+     */ 
+
     public partial class VentanaCorte : Form
     {
         Usuario usuario;
@@ -23,6 +28,12 @@ namespace Panaderia
             
             InitializeComponent();
         }
+
+
+        /*
+         * Método para generar el corte de ventas
+         */ 
+
 
         private void VentanaCorte_Load(object sender, EventArgs e)
         {
@@ -43,7 +54,9 @@ namespace Panaderia
             lblTotal.Text = (total - des) + "";
         }
         
-
+        /*
+         * Método para regresar
+         */ 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             VentanaVentas v = new VentanaVentas(usuario, lista);
@@ -61,6 +74,12 @@ namespace Panaderia
 
             //  VentanaCorte_Load(sender, e);
         }
+
+
+        /*
+        * Métodos para los botones en la parte superior derecha y
+        * para poder cambiar de ventana.
+        */
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {

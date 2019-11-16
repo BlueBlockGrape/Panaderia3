@@ -12,6 +12,12 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
+
+    /*
+     * Manipulación de datos de la ventana y conexiones con
+     * la edición de los usuarios para un mejor uso de los datos.
+     */ 
+
     public partial class VentanaEditarUsuario : Form
     {
         private Usuario usuario;
@@ -22,6 +28,11 @@ namespace Panaderia
             usuario = p;
             InitializeComponent();
         }
+
+
+        /*
+         * Verificación de campos vacios y llamada a métodos
+         */ 
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -105,6 +116,10 @@ namespace Panaderia
             
         }
 
+        /*
+         * Método para editar la información de un usuario
+         */ 
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (cmbUsuario.Text.Equals(""))
@@ -141,6 +156,12 @@ namespace Panaderia
             }
         }
 
+        /*
+         * Método para optener la información de un usuario
+         * 
+         */ 
+
+
         private void VentanaEditarUsuario_Load(object sender, EventArgs e)
         {
             cmbUsuario.Enabled = true;
@@ -152,6 +173,11 @@ namespace Panaderia
 
             }
         }
+
+        /*
+        * Métodos para los botones en la parte superior derecha y
+        * para poder cambiar de ventana.
+        */
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
