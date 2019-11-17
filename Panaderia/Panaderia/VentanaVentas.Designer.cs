@@ -85,6 +85,7 @@
             this.dtgCarrito.Name = "dtgCarrito";
             this.dtgCarrito.ReadOnly = true;
             this.dtgCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            //this.dtgCarrito.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCarrito_CellContentClick);
             // 
             // label1
             // 

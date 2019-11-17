@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Datos.Modelo;
 using Datos.Daos;
+using System.Runtime.InteropServices;
 
 namespace Panaderia
 {
@@ -185,5 +186,20 @@ namespace Panaderia
             btnMaximizar.Visible = true;
             btnRestaurar.Visible = false;
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int vParam, int iParam);
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+
     }
 }

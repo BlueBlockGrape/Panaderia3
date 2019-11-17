@@ -40,6 +40,19 @@
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.btnEditarUsuario = new System.Windows.Forms.Button();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.panessubmenu = new System.Windows.Forms.Panel();
+            this.btnEliminarPan = new System.Windows.Forms.Button();
+            this.btnEditarPan = new System.Windows.Forms.Button();
+            this.btnAgregarPan = new System.Windows.Forms.Button();
+            this.ventassubmenu = new System.Windows.Forms.Panel();
+            this.btnCorte = new System.Windows.Forms.Button();
+            this.btnEditarVenta = new System.Windows.Forms.Button();
+            this.btnAgregarVenta = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.proveedoressubmenu = new System.Windows.Forms.Panel();
+            this.btnAgregarProveedor = new System.Windows.Forms.Button();
+            this.btnEliminarProveedor = new System.Windows.Forms.Button();
+            this.btnEditarProveedor = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -47,36 +60,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.ventassubmenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAgregarVenta = new System.Windows.Forms.Button();
-            this.btnEditarVenta = new System.Windows.Forms.Button();
-            this.btnCorte = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.lblname = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnEliminarPan = new System.Windows.Forms.Button();
-            this.btnAgregarPan = new System.Windows.Forms.Button();
-            this.btnEditarPan = new System.Windows.Forms.Button();
-            this.btnAgregarProveedor = new System.Windows.Forms.Button();
-            this.btnEditarProveedor = new System.Windows.Forms.Button();
-            this.btnEliminarProveedor = new System.Windows.Forms.Button();
-            this.proveedoressubmenu = new System.Windows.Forms.Panel();
-            this.panessubmenu = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.usuariossubmenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panessubmenu.SuspendLayout();
             this.ventassubmenu.SuspendLayout();
+            this.proveedoressubmenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             this.BarraTitulo.SuspendLayout();
-            this.proveedoressubmenu.SuspendLayout();
-            this.panessubmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -257,6 +257,200 @@
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // panessubmenu
+            // 
+            this.panessubmenu.Controls.Add(this.btnEliminarPan);
+            this.panessubmenu.Controls.Add(this.btnEditarPan);
+            this.panessubmenu.Controls.Add(this.btnAgregarPan);
+            this.panessubmenu.Location = new System.Drawing.Point(46, 288);
+            this.panessubmenu.Name = "panessubmenu";
+            this.panessubmenu.Size = new System.Drawing.Size(155, 105);
+            this.panessubmenu.TabIndex = 14;
+            this.panessubmenu.Visible = false;
+            // 
+            // btnEliminarPan
+            // 
+            this.btnEliminarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEliminarPan.FlatAppearance.BorderSize = 0;
+            this.btnEliminarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnEliminarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarPan.Location = new System.Drawing.Point(3, 70);
+            this.btnEliminarPan.Name = "btnEliminarPan";
+            this.btnEliminarPan.Size = new System.Drawing.Size(150, 35);
+            this.btnEliminarPan.TabIndex = 10;
+            this.btnEliminarPan.Text = "Eliminar";
+            this.btnEliminarPan.UseVisualStyleBackColor = false;
+            this.btnEliminarPan.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnEditarPan
+            // 
+            this.btnEditarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEditarPan.FlatAppearance.BorderSize = 0;
+            this.btnEditarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnEditarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarPan.Location = new System.Drawing.Point(3, 37);
+            this.btnEditarPan.Name = "btnEditarPan";
+            this.btnEditarPan.Size = new System.Drawing.Size(150, 35);
+            this.btnEditarPan.TabIndex = 12;
+            this.btnEditarPan.Text = "EDITAR";
+            this.btnEditarPan.UseVisualStyleBackColor = false;
+            this.btnEditarPan.Click += new System.EventHandler(this.btnEditarPan_Click);
+            // 
+            // btnAgregarPan
+            // 
+            this.btnAgregarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregarPan.FlatAppearance.BorderSize = 0;
+            this.btnAgregarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAgregarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarPan.Location = new System.Drawing.Point(3, 3);
+            this.btnAgregarPan.Name = "btnAgregarPan";
+            this.btnAgregarPan.Size = new System.Drawing.Size(150, 35);
+            this.btnAgregarPan.TabIndex = 11;
+            this.btnAgregarPan.Text = "AGREGAR";
+            this.btnAgregarPan.UseVisualStyleBackColor = false;
+            this.btnAgregarPan.Click += new System.EventHandler(this.btnAgregarPan_Click);
+            // 
+            // ventassubmenu
+            // 
+            this.ventassubmenu.Controls.Add(this.btnCorte);
+            this.ventassubmenu.Controls.Add(this.btnEditarVenta);
+            this.ventassubmenu.Controls.Add(this.btnAgregarVenta);
+            this.ventassubmenu.Location = new System.Drawing.Point(49, 247);
+            this.ventassubmenu.Name = "ventassubmenu";
+            this.ventassubmenu.Size = new System.Drawing.Size(153, 92);
+            this.ventassubmenu.TabIndex = 9;
+            this.ventassubmenu.Visible = false;
+            // 
+            // btnCorte
+            // 
+            this.btnCorte.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCorte.FlatAppearance.BorderSize = 0;
+            this.btnCorte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnCorte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCorte.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCorte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCorte.Location = new System.Drawing.Point(0, 57);
+            this.btnCorte.Name = "btnCorte";
+            this.btnCorte.Size = new System.Drawing.Size(150, 35);
+            this.btnCorte.TabIndex = 14;
+            this.btnCorte.Text = "CORTE";
+            this.btnCorte.UseVisualStyleBackColor = false;
+            this.btnCorte.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnEditarVenta
+            // 
+            this.btnEditarVenta.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEditarVenta.FlatAppearance.BorderSize = 0;
+            this.btnEditarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnEditarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarVenta.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarVenta.Location = new System.Drawing.Point(0, 24);
+            this.btnEditarVenta.Name = "btnEditarVenta";
+            this.btnEditarVenta.Size = new System.Drawing.Size(150, 35);
+            this.btnEditarVenta.TabIndex = 12;
+            this.btnEditarVenta.Text = "EDITAR";
+            this.btnEditarVenta.UseVisualStyleBackColor = false;
+            this.btnEditarVenta.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnAgregarVenta
+            // 
+            this.btnAgregarVenta.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregarVenta.FlatAppearance.BorderSize = 0;
+            this.btnAgregarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAgregarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarVenta.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarVenta.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregarVenta.Name = "btnAgregarVenta";
+            this.btnAgregarVenta.Size = new System.Drawing.Size(150, 35);
+            this.btnAgregarVenta.TabIndex = 11;
+            this.btnAgregarVenta.Text = "VENTA";
+            this.btnAgregarVenta.UseVisualStyleBackColor = false;
+            this.btnAgregarVenta.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(2, 169);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 35);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "USUARIOS";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // proveedoressubmenu
+            // 
+            this.proveedoressubmenu.Controls.Add(this.btnAgregarProveedor);
+            this.proveedoressubmenu.Controls.Add(this.btnEliminarProveedor);
+            this.proveedoressubmenu.Controls.Add(this.btnEditarProveedor);
+            this.proveedoressubmenu.Location = new System.Drawing.Point(46, 329);
+            this.proveedoressubmenu.Name = "proveedoressubmenu";
+            this.proveedoressubmenu.Size = new System.Drawing.Size(154, 99);
+            this.proveedoressubmenu.TabIndex = 13;
+            this.proveedoressubmenu.Visible = false;
+            // 
+            // btnAgregarProveedor
+            // 
+            this.btnAgregarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregarProveedor.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarProveedor.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
+            this.btnAgregarProveedor.Size = new System.Drawing.Size(150, 35);
+            this.btnAgregarProveedor.TabIndex = 11;
+            this.btnAgregarProveedor.Text = "AGREGAR";
+            this.btnAgregarProveedor.UseVisualStyleBackColor = false;
+            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
+            // 
+            // btnEliminarProveedor
+            // 
+            this.btnEliminarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEliminarProveedor.FlatAppearance.BorderSize = 0;
+            this.btnEliminarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnEliminarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarProveedor.Location = new System.Drawing.Point(0, 63);
+            this.btnEliminarProveedor.Name = "btnEliminarProveedor";
+            this.btnEliminarProveedor.Size = new System.Drawing.Size(150, 35);
+            this.btnEliminarProveedor.TabIndex = 10;
+            this.btnEliminarProveedor.Text = "Eliminar";
+            this.btnEliminarProveedor.UseVisualStyleBackColor = false;
+            this.btnEliminarProveedor.Click += new System.EventHandler(this.btnEliminarProveedor_Click);
+            // 
+            // btnEditarProveedor
+            // 
+            this.btnEditarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEditarProveedor.FlatAppearance.BorderSize = 0;
+            this.btnEditarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnEditarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarProveedor.Location = new System.Drawing.Point(0, 31);
+            this.btnEditarProveedor.Name = "btnEditarProveedor";
+            this.btnEditarProveedor.Size = new System.Drawing.Size(150, 35);
+            this.btnEditarProveedor.TabIndex = 12;
+            this.btnEditarProveedor.Text = "EDITAR";
+            this.btnEditarProveedor.UseVisualStyleBackColor = false;
+            this.btnEditarProveedor.Click += new System.EventHandler(this.btnEditarProveedor_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -315,83 +509,6 @@
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(714, 523);
             this.PanelContenedor.TabIndex = 11;
-            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
-            // 
-            // ventassubmenu
-            // 
-            this.ventassubmenu.Controls.Add(this.btnCorte);
-            this.ventassubmenu.Controls.Add(this.btnEditarVenta);
-            this.ventassubmenu.Controls.Add(this.btnAgregarVenta);
-            this.ventassubmenu.Location = new System.Drawing.Point(49, 247);
-            this.ventassubmenu.Name = "ventassubmenu";
-            this.ventassubmenu.Size = new System.Drawing.Size(153, 92);
-            this.ventassubmenu.TabIndex = 9;
-            this.ventassubmenu.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(2, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 35);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "USUARIOS";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_3);
-            // 
-            // btnAgregarVenta
-            // 
-            this.btnAgregarVenta.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAgregarVenta.FlatAppearance.BorderSize = 0;
-            this.btnAgregarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnAgregarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarVenta.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarVenta.Location = new System.Drawing.Point(0, 0);
-            this.btnAgregarVenta.Name = "btnAgregarVenta";
-            this.btnAgregarVenta.Size = new System.Drawing.Size(150, 35);
-            this.btnAgregarVenta.TabIndex = 11;
-            this.btnAgregarVenta.Text = "VENTA";
-            this.btnAgregarVenta.UseVisualStyleBackColor = false;
-            this.btnAgregarVenta.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnEditarVenta
-            // 
-            this.btnEditarVenta.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEditarVenta.FlatAppearance.BorderSize = 0;
-            this.btnEditarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnEditarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarVenta.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarVenta.Location = new System.Drawing.Point(0, 24);
-            this.btnEditarVenta.Name = "btnEditarVenta";
-            this.btnEditarVenta.Size = new System.Drawing.Size(150, 35);
-            this.btnEditarVenta.TabIndex = 12;
-            this.btnEditarVenta.Text = "EDITAR";
-            this.btnEditarVenta.UseVisualStyleBackColor = false;
-            this.btnEditarVenta.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnCorte
-            // 
-            this.btnCorte.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCorte.FlatAppearance.BorderSize = 0;
-            this.btnCorte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnCorte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCorte.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCorte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCorte.Location = new System.Drawing.Point(0, 57);
-            this.btnCorte.Name = "btnCorte";
-            this.btnCorte.Size = new System.Drawing.Size(150, 35);
-            this.btnCorte.TabIndex = 14;
-            this.btnCorte.Text = "CORTE";
-            this.btnCorte.UseVisualStyleBackColor = false;
-            this.btnCorte.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnMaximizar
             // 
@@ -470,124 +587,7 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(914, 35);
             this.BarraTitulo.TabIndex = 9;
-            // 
-            // btnEliminarPan
-            // 
-            this.btnEliminarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEliminarPan.FlatAppearance.BorderSize = 0;
-            this.btnEliminarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnEliminarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarPan.Location = new System.Drawing.Point(3, 70);
-            this.btnEliminarPan.Name = "btnEliminarPan";
-            this.btnEliminarPan.Size = new System.Drawing.Size(150, 35);
-            this.btnEliminarPan.TabIndex = 10;
-            this.btnEliminarPan.Text = "Eliminar";
-            this.btnEliminarPan.UseVisualStyleBackColor = false;
-            this.btnEliminarPan.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // btnAgregarPan
-            // 
-            this.btnAgregarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAgregarPan.FlatAppearance.BorderSize = 0;
-            this.btnAgregarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnAgregarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarPan.Location = new System.Drawing.Point(3, 3);
-            this.btnAgregarPan.Name = "btnAgregarPan";
-            this.btnAgregarPan.Size = new System.Drawing.Size(150, 35);
-            this.btnAgregarPan.TabIndex = 11;
-            this.btnAgregarPan.Text = "AGREGAR";
-            this.btnAgregarPan.UseVisualStyleBackColor = false;
-            this.btnAgregarPan.Click += new System.EventHandler(this.btnAgregarPan_Click);
-            // 
-            // btnEditarPan
-            // 
-            this.btnEditarPan.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEditarPan.FlatAppearance.BorderSize = 0;
-            this.btnEditarPan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnEditarPan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPan.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarPan.Location = new System.Drawing.Point(3, 37);
-            this.btnEditarPan.Name = "btnEditarPan";
-            this.btnEditarPan.Size = new System.Drawing.Size(150, 35);
-            this.btnEditarPan.TabIndex = 12;
-            this.btnEditarPan.Text = "EDITAR";
-            this.btnEditarPan.UseVisualStyleBackColor = false;
-            this.btnEditarPan.Click += new System.EventHandler(this.btnEditarPan_Click);
-            // 
-            // btnAgregarProveedor
-            // 
-            this.btnAgregarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAgregarProveedor.FlatAppearance.BorderSize = 0;
-            this.btnAgregarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(0, 0);
-            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(150, 35);
-            this.btnAgregarProveedor.TabIndex = 11;
-            this.btnAgregarProveedor.Text = "AGREGAR";
-            this.btnAgregarProveedor.UseVisualStyleBackColor = false;
-            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
-            // 
-            // btnEditarProveedor
-            // 
-            this.btnEditarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEditarProveedor.FlatAppearance.BorderSize = 0;
-            this.btnEditarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnEditarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarProveedor.Location = new System.Drawing.Point(0, 31);
-            this.btnEditarProveedor.Name = "btnEditarProveedor";
-            this.btnEditarProveedor.Size = new System.Drawing.Size(150, 35);
-            this.btnEditarProveedor.TabIndex = 12;
-            this.btnEditarProveedor.Text = "EDITAR";
-            this.btnEditarProveedor.UseVisualStyleBackColor = false;
-            this.btnEditarProveedor.Click += new System.EventHandler(this.btnEditarProveedor_Click);
-            // 
-            // btnEliminarProveedor
-            // 
-            this.btnEliminarProveedor.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEliminarProveedor.FlatAppearance.BorderSize = 0;
-            this.btnEliminarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnEliminarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarProveedor.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarProveedor.Location = new System.Drawing.Point(0, 63);
-            this.btnEliminarProveedor.Name = "btnEliminarProveedor";
-            this.btnEliminarProveedor.Size = new System.Drawing.Size(150, 35);
-            this.btnEliminarProveedor.TabIndex = 10;
-            this.btnEliminarProveedor.Text = "Eliminar";
-            this.btnEliminarProveedor.UseVisualStyleBackColor = false;
-            this.btnEliminarProveedor.Click += new System.EventHandler(this.btnEliminarProveedor_Click);
-            // 
-            // proveedoressubmenu
-            // 
-            this.proveedoressubmenu.Controls.Add(this.btnAgregarProveedor);
-            this.proveedoressubmenu.Controls.Add(this.btnEliminarProveedor);
-            this.proveedoressubmenu.Controls.Add(this.btnEditarProveedor);
-            this.proveedoressubmenu.Location = new System.Drawing.Point(46, 329);
-            this.proveedoressubmenu.Name = "proveedoressubmenu";
-            this.proveedoressubmenu.Size = new System.Drawing.Size(154, 99);
-            this.proveedoressubmenu.TabIndex = 13;
-            this.proveedoressubmenu.Visible = false;
-            // 
-            // panessubmenu
-            // 
-            this.panessubmenu.Controls.Add(this.btnEliminarPan);
-            this.panessubmenu.Controls.Add(this.btnEditarPan);
-            this.panessubmenu.Controls.Add(this.btnAgregarPan);
-            this.panessubmenu.Location = new System.Drawing.Point(46, 288);
-            this.panessubmenu.Name = "panessubmenu";
-            this.panessubmenu.Size = new System.Drawing.Size(155, 105);
-            this.panessubmenu.TabIndex = 14;
-            this.panessubmenu.Visible = false;
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
             // VentanaMenu
             // 
@@ -608,16 +608,16 @@
             this.Load += new System.EventHandler(this.ventanaMenu_Load);
             this.MenuVertical.ResumeLayout(false);
             this.usuariossubmenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panessubmenu.ResumeLayout(false);
             this.ventassubmenu.ResumeLayout(false);
+            this.proveedoressubmenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
-            this.proveedoressubmenu.ResumeLayout(false);
-            this.panessubmenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

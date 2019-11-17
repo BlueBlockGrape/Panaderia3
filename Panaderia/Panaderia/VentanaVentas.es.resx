@@ -119,37 +119,43 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dtgPanes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 233</value>
+    <value>323, 233</value>
   </data>
   <data name="dtgPanes.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 207</value>
   </data>
+  <data name="lblNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 9</value>
+  </data>
   <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 198</value>
+    <value>323, 198</value>
   </data>
   <data name="dtgCarrito.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="dtgCarrito.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 414</value>
+    <value>299, 423</value>
+  </data>
+  <data name="lblTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 426</value>
   </data>
   <data name="btnEliminar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 12</value>
+    <value>323, 12</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 167</value>
+    <value>437, 167</value>
   </data>
   <data name="txtCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 194</value>
+    <value>441, 194</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 46</value>
+    <value>319, 46</value>
   </data>
   <data name="txtDescuento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 73</value>
+    <value>323, 73</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>707, 489</value>
+    <value>701, 489</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3712,5 +3718,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Panaderia
 {
@@ -172,10 +173,6 @@ namespace Panaderia
             btnMaximizar.Visible = true;
         }
 
-        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void AbrirForm(object formhija)
         {
             if (this.PanelContenedor.Controls.Count > 0)
@@ -305,5 +302,20 @@ namespace Panaderia
             proveedoressubmenu.Visible = false;
             AbrirForm(new VentanaPanesUpdate(usuario, listav));
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int vParam, int iParam);
+
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+
     }
 }

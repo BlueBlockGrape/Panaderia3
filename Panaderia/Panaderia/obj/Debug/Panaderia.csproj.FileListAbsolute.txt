@@ -170,3 +170,9 @@ C:\Users\gaaro\Documents\GitHub\Panaderia3\Panaderia\Panaderia\obj\Debug\pa-Guru
 C:\Users\gaaro\Documents\GitHub\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.csproj.CopyComplete
 C:\Users\gaaro\Documents\GitHub\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.exe
 C:\Users\gaaro\Documents\GitHub\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.pdb
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\es\Panaderia.resources.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\bin\Debug\pa-Guru\Panaderia.resources.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.es.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\Panaderia.VentanaVentas.pa-Guru.resources
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\es\Panaderia.resources.dll
+C:\Users\danie\Desktop\Gestión de Proyectos de Software\ProyectoGestióndeProyectosdeSoftware\Panaderia3\Panaderia\Panaderia\obj\Debug\pa-Guru\Panaderia.resources.dll

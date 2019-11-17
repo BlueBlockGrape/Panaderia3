@@ -14,7 +14,7 @@ namespace Datos.Daos
 
         public bool Agregar(Materia p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
             try
             {
                 Conexion.Open();
@@ -83,7 +83,7 @@ namespace Datos.Daos
         public List<Materia> Ver()
         {
             List<Materia> Lista = new List<Materia>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
 
             Conexion.Open();
 
