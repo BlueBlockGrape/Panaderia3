@@ -38,41 +38,53 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Equals(""))
+
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Falta llenar el campo nombre", "ERROR*");
-            }else if (txtApellidos.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Apellidos", "ERROR*");
-            }else if (txtDireccion.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Dirección", "ERROR*");
-            }else if (txtPassword.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Contraseña", "ERROR*");
+
+                if (txtNombre.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo nombre", "ERROR*");
+                }
+                else if (txtApellidos.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Apellidos", "ERROR*");
+                }
+                else if (txtDireccion.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Dirección", "ERROR*");
+                }
+                else if (txtPassword.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Contraseña", "ERROR*");
+                }
+                else
+                {
+                    Usuario obj = new Usuario();
+                    Usuariodao vd = new Usuariodao();
+                    String z = cmbTipo.SelectedItem.ToString();
+                    DateTime dat = dtpFecha.Value; //"1/1/2010"
+
+                    bool x = false;
+                    if (z.Equals("ADMINISTRADOR"))
+                    {
+                        x = true;
+                    }
+
+                    obj.Nombre = txtNombre.Text;
+                    obj.Apellidos = txtApellidos.Text;
+                    obj.Fecha_Nac = dat;
+                    obj.Direccion = txtDireccion.Text;
+                    obj.Administrador = x;
+                    obj.Contraseña = txtPassword.Text;
+                    string g = vd.Registrar(obj);
+                    Usuario d = vd.Ultimo();
+                    MessageBox.Show("Usuario agregado con exito" + ".\n" + "ID_USUARIO: " + d.Id_Usuario + ".\n" + "Conraseña: " + txtPassword.Text);
+                }
             }
             else
             {
-                Usuario obj = new Usuario();
-                Usuariodao vd = new Usuariodao();
-                String z = cmbTipo.SelectedItem.ToString();
-                DateTime dat = dtpFecha.Value; //"1/1/2010"
-
-                bool x = false;
-                if (z.Equals("ADMINISTRADOR"))
-                {
-                    x = true;
-                }
-
-                obj.Nombre = txtNombre.Text;
-                obj.Apellidos = txtApellidos.Text;
-                obj.Fecha_Nac = dat;
-                obj.Direccion = txtDireccion.Text;
-                obj.Administrador = x;
-                obj.Contraseña = txtPassword.Text;
-                string g = vd.Registrar(obj);
-                Usuario d = vd.Ultimo();
-                MessageBox.Show("Usuario agregado con exito"+ ".\n"+"ID_USUARIO: "+ d.Id_Usuario + ".\n" +"Conraseña: "+ txtPassword.Text);
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
             
         }

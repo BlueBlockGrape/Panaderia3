@@ -46,20 +46,27 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text.Equals("") | txtPrecio.Text.Equals("") | cmbTam.Text.Equals("-Selecciona tamaño del pan-"))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Campos obligatorios vacíos", "ERROR*");
+                if (txtNombre.Text.Equals("") | txtPrecio.Text.Equals("") | cmbTam.Text.Equals("-Selecciona tamaño del pan-"))
+                {
+                    MessageBox.Show("Campos obligatorios vacíos", "ERROR*");
+                }
+                else
+                {
+                    p.Nombre = txtNombre.Text;
+                    p.Precio = double.Parse(txtPrecio.Text);
+                    p.Tamaño = cmbTam.Text;
+                    pd.Insert(p);
+                    MessageBox.Show("Registro Guardado", "Éxito");
+                    txtNombre.Text = "";
+                    txtPrecio.Text = "";
+                    cmbTam.Text = "Chico";
+                }
             }
             else
             {
-                p.Nombre = txtNombre.Text;
-                p.Precio = double.Parse(txtPrecio.Text);
-                p.Tamaño = cmbTam.Text;
-                pd.Insert(p);                
-                MessageBox.Show("Registro Guardado", "Éxito");
-                txtNombre.Text = "";
-                txtPrecio.Text = "";
-                cmbTam.Text = "Chico" ;
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

@@ -9,6 +9,16 @@ using MySql.Data.MySqlClient;
 
 namespace Datos.Daos
 {
+
+    /*
+     * Métodos implementados para realizar las consultas con la base de datos
+     * y algunas cuestiones con los modelos de la parte de Pertenencia que es
+     * una tabla relacional de la base de datos para que se
+     * guarden todos los datos referentes a esta clase y puedan ser utilizados por
+     * el programa, por lo que el programa utiliza esta clase para conseguir datos
+     * de la base de datos según lo requiera.
+     */
+
     public class Pertenecedao
     {
         private MySqlConnection Conexion = new MySqlConnection();
@@ -17,7 +27,7 @@ namespace Datos.Daos
         {
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             }
             catch (Exception)
             {
@@ -54,7 +64,7 @@ namespace Datos.Daos
         {
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             }
             catch (Exception)
             {
@@ -85,7 +95,7 @@ namespace Datos.Daos
         {
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             }
             catch (Exception)
             {
@@ -116,7 +126,7 @@ namespace Datos.Daos
         {
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             }
             catch (Exception)
             {
@@ -152,7 +162,7 @@ namespace Datos.Daos
             List<Pertenece> lista = new List<Pertenece>();
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+                Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             }
             catch (Exception)
             {

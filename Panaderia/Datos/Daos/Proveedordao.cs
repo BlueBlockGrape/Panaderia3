@@ -9,12 +9,21 @@ using System.Data;
 
 namespace Datos.Daos
 {
+
+    /*
+     * Métodos implementados para realizar las consultas con la base de datos
+     * y algunas cuestiones con los modelos de la parte de Proveedores para que se
+     * guarden todos los datos referentes a esta clase y puedan ser utilizados por
+     * el programa, por lo que el programa utiliza esta clase para conseguir datos
+     * de la base de datos según lo requiera.
+     */
+
     public class Proveedordao
     {
         private MySqlConnection Conexion = new MySqlConnection();
         public string Insert(Proveedor p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -39,7 +48,7 @@ namespace Datos.Daos
 
         public bool Delete(Proveedor p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -61,7 +70,7 @@ namespace Datos.Daos
 
         public bool Update(Proveedor p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -88,7 +97,7 @@ namespace Datos.Daos
         public List<Proveedor> GetAll()
         {
             List<Proveedor> lista = new List<Proveedor>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
 

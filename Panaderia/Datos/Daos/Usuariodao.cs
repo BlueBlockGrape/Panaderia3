@@ -9,13 +9,23 @@ using MySql.Data.MySqlClient;
 
 namespace Datos.Daos
 {
-   public class Usuariodao
+
+    /*
+     * Métodos implementados para realizar las consultas con la base de datos
+     * y algunas cuestiones con los modelos de la parte de Usuarios para que se
+     * guarden todos los datos referentes a esta clase y puedan ser utilizados por
+     * el programa, por lo que el programa utiliza esta clase para conseguir datos
+     * de la base de datos según lo requiera.
+     */
+
+
+    public class Usuariodao
     {
         private MySqlConnection Conexion = new MySqlConnection();
 
         public Usuario Entrar(Usuario p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 //  bool si = false;
@@ -64,7 +74,7 @@ namespace Datos.Daos
 
         public string Registrar(Usuario p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -94,7 +104,7 @@ namespace Datos.Daos
 
         public bool Delete(int id)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -121,7 +131,7 @@ namespace Datos.Daos
 
         public bool Update(Usuario p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -152,7 +162,7 @@ namespace Datos.Daos
 
         public Usuario Ultimo()
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 //  bool si = false;
@@ -201,7 +211,7 @@ namespace Datos.Daos
         public List<Usuario> GetAll()
         {
             List<Usuario> lista = new List<Usuario>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -248,7 +258,7 @@ namespace Datos.Daos
 
         public Usuario Especifico(int g)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 //  bool si = false;

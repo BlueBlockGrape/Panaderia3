@@ -62,25 +62,34 @@ namespace Panaderia
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtID.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Seleccione producto a modificar");
-            }else if (txtNombre.Text.Equals("") | txtPrecio.Text.Equals(""))
-            {
-                MessageBox.Show("Llene el formulario");
+                if (txtID.Text.Equals(""))
+                {
+                    MessageBox.Show("Seleccione producto a modificar");
+                }
+                else if (txtNombre.Text.Equals("") | txtPrecio.Text.Equals(""))
+                {
+                    MessageBox.Show("Llene el formulario");
+                }
+                else
+                {
+                    p.Id_Pan = int.Parse(txtID.Text);
+                    p.Nombre = txtNombre.Text;
+                    p.Precio = double.Parse(txtPrecio.Text);
+                    p.Tamaño = cmbTam.Text;
+                    pd.Update(p);
+                    MessageBox.Show("Registro Modificado", "Éxito");
+                    txtID.Text = "";
+                    txtNombre.Text = "";
+                    txtPrecio.Text = "";
+                    cmbTam.Text = "-Selecciona una opción-";
+                    dataGridView1.DataSource = new Panesdao().GetAll();
+                }
             }
-            else{
-                p.Id_Pan = int.Parse(txtID.Text);
-                p.Nombre = txtNombre.Text;
-                p.Precio = double.Parse(txtPrecio.Text);
-                p.Tamaño = cmbTam.Text;
-                pd.Update(p);
-                MessageBox.Show("Registro Modificado", "Éxito");
-                txtID.Text = "";
-                txtNombre.Text = "";
-                txtPrecio.Text = "";
-                cmbTam.Text = "-Selecciona una opción-";
-                dataGridView1.DataSource = new Panesdao().GetAll();
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

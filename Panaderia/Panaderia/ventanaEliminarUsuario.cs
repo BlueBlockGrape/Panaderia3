@@ -36,25 +36,32 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtID.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Falta llenar el campo ID_Usuario", "ERROR*");
-            }
-            else
-            {
-                int del = int.Parse(txtID.Text);
-                Usuario obj = new Usuario();
-                Usuariodao vd = new Usuariodao();
-                bool g = vd.Delete(del);
-
-                if (g)
+                if (txtID.Text.Equals(""))
                 {
-                    MessageBox.Show("Usuario eliminado con exito", "MENSAJE");
+                    MessageBox.Show("Falta llenar el campo ID_Usuario", "ERROR*");
                 }
                 else
                 {
-                    MessageBox.Show("No se a encontrado algun usuario con ese id", "ERROR*");
+                    int del = int.Parse(txtID.Text);
+                    Usuario obj = new Usuario();
+                    Usuariodao vd = new Usuariodao();
+                    bool g = vd.Delete(del);
+
+                    if (g)
+                    {
+                        MessageBox.Show("Usuario eliminado con exito", "MENSAJE");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se a encontrado algun usuario con ese id", "ERROR*");
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

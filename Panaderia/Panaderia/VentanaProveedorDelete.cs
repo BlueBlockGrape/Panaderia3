@@ -38,16 +38,23 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtDel.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Por favor, introduzca un ID válido", "ERROR*");
+                if (txtDel.Text.Equals(""))
+                {
+                    MessageBox.Show("Por favor, introduzca un ID válido", "ERROR*");
+                }
+                else
+                {
+                    p.Id_Proveedor = int.Parse(txtDel.Text);
+                    pd.Delete(p);
+                    MessageBox.Show("Registro Eliminado", "Éxito");
+                    txtDel.Text = "";
+                }
             }
             else
             {
-                p.Id_Proveedor = int.Parse(txtDel.Text);
-                pd.Delete(p);
-                MessageBox.Show("Registro Eliminado", "Éxito");
-                txtDel.Text = "";
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

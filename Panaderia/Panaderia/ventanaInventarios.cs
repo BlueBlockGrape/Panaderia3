@@ -42,96 +42,117 @@ namespace Panaderia
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtDescripcion.Text.Equals("") || txtNombre.Text.Equals("") || txtExistencias.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Llene bien el formulario");
-            }
-            else
-            {
-                obj.Nombre = txtNombre.Text;
-                obj.Existencias = int.Parse(txtExistencias.Text);
-                obj.Descripcion = txtDescripcion.Text;
-                bool valor = obj2.Agregar(obj);
-                if (valor)
+                if (txtDescripcion.Text.Equals("") || txtNombre.Text.Equals("") || txtExistencias.Text.Equals(""))
                 {
-                    MessageBox.Show("El Producto se guardo con exito.");
+                    MessageBox.Show("Llene bien el formulario");
                 }
                 else
                 {
-                    MessageBox.Show("Hubo un error: El Producto no se guardo.");
+                    obj.Nombre = txtNombre.Text;
+                    obj.Existencias = int.Parse(txtExistencias.Text);
+                    obj.Descripcion = txtDescripcion.Text;
+                    bool valor = obj2.Agregar(obj);
+                    if (valor)
+                    {
+                        MessageBox.Show("El Producto se guardo con exito.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hubo un error: El Producto no se guardo.");
+                    }
+                    dgvProductos.ReadOnly = true;
+                    dgvProductos.DataSource = obj2.Ver();
+                    txtNombre.Text = "";
+                    txtExistencias.Text = "";
+                    txtDescripcion.Text = "";
+                    lblIdMostrar.Text = "---";
                 }
-                dgvProductos.ReadOnly = true;
-                dgvProductos.DataSource = obj2.Ver();
-                txtNombre.Text = "";
-                txtExistencias.Text = "";
-                txtDescripcion.Text = "";
-                lblIdMostrar.Text = "---";
+            }
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
 
-                
+
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (lblIdMostrar.Text.Equals("---"))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Seleccione el producto a actualizar");
-            }
-            else if (txtDescripcion.Text.Equals("") || txtNombre.Text.Equals("") || txtExistencias.Text.Equals(""))
-            {
-                MessageBox.Show("Llene bien el formulario");
-            }
-            else
-            {
-                obj.Nombre = txtNombre.Text;
-                obj.Existencias = int.Parse(txtExistencias.Text);
-                obj.Descripcion = txtDescripcion.Text;
-                obj.Id_Materia = int.Parse(lblIdMostrar.Text);
-                bool valor = obj2.Editar(obj);
-                if (valor)
+                if (lblIdMostrar.Text.Equals("---"))
                 {
-                    MessageBox.Show("El Producto se actualizo con exito.");
+                    MessageBox.Show("Seleccione el producto a actualizar");
+                }
+                else if (txtDescripcion.Text.Equals("") || txtNombre.Text.Equals("") || txtExistencias.Text.Equals(""))
+                {
+                    MessageBox.Show("Llene bien el formulario");
                 }
                 else
                 {
-                    MessageBox.Show("Hubo un error: El Producto no se actualizo.");
+                    obj.Nombre = txtNombre.Text;
+                    obj.Existencias = int.Parse(txtExistencias.Text);
+                    obj.Descripcion = txtDescripcion.Text;
+                    obj.Id_Materia = int.Parse(lblIdMostrar.Text);
+                    bool valor = obj2.Editar(obj);
+                    if (valor)
+                    {
+                        MessageBox.Show("El Producto se actualizo con exito.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hubo un error: El Producto no se actualizo.");
+                    }
+                    dgvProductos.ReadOnly = true;
+                    dgvProductos.DataSource = obj2.Ver();
+                    txtNombre.Text = "";
+                    txtExistencias.Text = "";
+                    txtDescripcion.Text = "";
+                    lblIdMostrar.Text = "---";
                 }
-                dgvProductos.ReadOnly = true;
-                dgvProductos.DataSource = obj2.Ver();
-                txtNombre.Text = "";
-                txtExistencias.Text = "";
-                txtDescripcion.Text = "";
-                lblIdMostrar.Text = "---";
+            }
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (lblIdMostrar.Text.Equals("---"))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Escoga la materia a eliminar");
-            }
-            else
-            {
-                obj.Nombre = txtNombre.Text;
-                obj.Existencias = int.Parse(txtExistencias.Text);
-                obj.Descripcion = txtDescripcion.Text;
-                obj.Id_Materia = int.Parse(lblIdMostrar.Text);
-                bool valor = obj2.Eliminar(obj);
-                if (valor)
+                if (lblIdMostrar.Text.Equals("---"))
                 {
-                    MessageBox.Show("El Producto se elimino con exito.");
+                    MessageBox.Show("Escoga la materia a eliminar");
                 }
                 else
                 {
-                    MessageBox.Show("Hubo un error: El Producto no se elimino.");
+                    obj.Nombre = txtNombre.Text;
+                    obj.Existencias = int.Parse(txtExistencias.Text);
+                    obj.Descripcion = txtDescripcion.Text;
+                    obj.Id_Materia = int.Parse(lblIdMostrar.Text);
+                    bool valor = obj2.Eliminar(obj);
+                    if (valor)
+                    {
+                        MessageBox.Show("El Producto se elimino con exito.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hubo un error: El Producto no se elimino.");
+                    }
+                    dgvProductos.ReadOnly = true;
+                    dgvProductos.DataSource = obj2.Ver();
+                    txtNombre.Text = "";
+                    txtExistencias.Text = "";
+                    txtDescripcion.Text = "";
+                    lblIdMostrar.Text = "---";
                 }
-                dgvProductos.ReadOnly = true;
-                dgvProductos.DataSource = obj2.Ver();
-                txtNombre.Text = "";
-                txtExistencias.Text = "";
-                txtDescripcion.Text = "";
-                lblIdMostrar.Text = "---";
+            }
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

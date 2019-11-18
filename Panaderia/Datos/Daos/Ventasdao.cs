@@ -9,13 +9,23 @@ using MySql.Data.MySqlClient;
 
 namespace Datos.Daos
 {
+    /*
+     * Métodos implementados para realizar las consultas con la base de datos
+     * y algunas cuestiones con los modelos de la parte de ventas para que se
+     * guarden todos los datos referentes a esta clase y puedan ser utilizados por
+     * el programa, por lo que el programa utiliza esta clase para conseguir datos
+     * de la base de datos según lo requiera.
+     */ 
+
+
+
     public class Ventasdao
     {
         private MySqlConnection Conexion = new MySqlConnection();
 
         public bool Insert(Ventas p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -44,7 +54,7 @@ namespace Datos.Daos
 
         public bool Delete(int id)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -67,7 +77,7 @@ namespace Datos.Daos
 
         public bool Update(Ventas p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -92,7 +102,7 @@ namespace Datos.Daos
         public List<Ventas> GetAll()
         {
             List<Ventas> lista = new List<Ventas>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -135,7 +145,7 @@ namespace Datos.Daos
         }
         public int GetLast()
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -179,7 +189,7 @@ namespace Datos.Daos
         public List<Ventas> GetFecha(string fecha)
         {
             List<Ventas> lista = new List<Ventas>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -224,7 +234,7 @@ namespace Datos.Daos
         public List<Ventas> GetIdUsuario(int Id_Usuario)
         {
             List<Ventas> lista = new List<Ventas>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -268,7 +278,7 @@ namespace Datos.Daos
         public List<Ventas> GetVenta(int Id_Venta)
         {
             List<Ventas> lista = new List<Ventas>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();

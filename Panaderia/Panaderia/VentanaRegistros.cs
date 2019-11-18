@@ -77,6 +77,7 @@ namespace Panaderia
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+
             Ventas venta = new Ventas();
             int indice = dtgVentas.CurrentRow.Index;
             venta.Id_Venta = int.Parse(dtgVentas.Rows[indice].Cells[0].Value.ToString());

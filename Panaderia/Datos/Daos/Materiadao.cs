@@ -8,13 +8,22 @@ using Datos.Modelo;
 using MySql.Data.MySqlClient;
 namespace Datos.Daos
 {
+
+    /*
+     * Métodos implementados para realizar las consultas con la base de datos
+     * y algunas cuestiones con los modelos de la parte de Materia para que se
+     * guarden todos los datos referentes a esta clase y puedan ser utilizados por
+     * el programa, por lo que el programa utiliza esta clase para conseguir datos
+     * de la base de datos según lo requiera.
+     */
+
     public class Materiadao
     {
         private MySqlConnection Conexion = new MySqlConnection();
 
         public bool Agregar(Materia p)
         {
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
             try
             {
                 Conexion.Open();
@@ -83,7 +92,7 @@ namespace Datos.Daos
         public List<Materia> Ver()
         {
             List<Materia> Lista = new List<Materia>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=root;";
+            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
 
             Conexion.Open();
 

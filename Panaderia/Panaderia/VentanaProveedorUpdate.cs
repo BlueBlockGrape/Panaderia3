@@ -65,29 +65,36 @@ namespace Panaderia
 
         private void button2_Click(object sender, EventArgs e)
         {
-             if (txtID.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Escoga el proveedor a modificar");
-            }
-           else if ( txtNombre.Text.Equals("") || txtProducto.Text.Equals("") || txtDomicilio.Text.Equals("") || txtTel.Text.Equals(""))
-            {
-                MessageBox.Show("Llene bien el formulario");
+                if (txtID.Text.Equals(""))
+                {
+                    MessageBox.Show("Escoga el proveedor a modificar");
+                }
+                else if (txtNombre.Text.Equals("") || txtProducto.Text.Equals("") || txtDomicilio.Text.Equals("") || txtTel.Text.Equals(""))
+                {
+                    MessageBox.Show("Llene bien el formulario");
+                }
+                else
+                {
+                    p.Id_Proveedor = int.Parse(txtID.Text);
+                    p.Nombre = txtNombre.Text;
+                    p.Domicilio = txtDomicilio.Text;
+                    p.Telefono = txtTel.Text;
+                    p.Productos = txtProducto.Text;
+                    pd.Update(p);
+                    MessageBox.Show("Registro Modificado", "Éxito");
+                    txtID.Text = "";
+                    txtNombre.Text = "";
+                    txtDomicilio.Text = "";
+                    txtTel.Text = "";
+                    txtProducto.Text = "";
+                    dataGridView1.DataSource = new Proveedordao().GetAll();
+                }
             }
             else
             {
-                p.Id_Proveedor = int.Parse(txtID.Text);
-                p.Nombre = txtNombre.Text;
-                p.Domicilio = txtDomicilio.Text;
-                p.Telefono = txtTel.Text;
-                p.Productos = txtProducto.Text;
-                pd.Update(p);
-                MessageBox.Show("Registro Modificado", "Éxito");
-                txtID.Text = "";
-                txtNombre.Text = "";
-                txtDomicilio.Text = "";
-                txtTel.Text = "";
-                txtProducto.Text = "";
-                dataGridView1.DataSource = new Proveedordao().GetAll();
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 

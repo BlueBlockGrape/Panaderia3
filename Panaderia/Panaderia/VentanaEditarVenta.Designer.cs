@@ -35,7 +35,6 @@
             this.dtgPanes = new System.Windows.Forms.DataGridView();
             this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -58,7 +57,6 @@
             this.PanelContenedor.Controls.Add(this.dtgPanes);
             this.PanelContenedor.Controls.Add(this.txtDescuento);
             this.PanelContenedor.Controls.Add(this.label2);
-            this.PanelContenedor.Controls.Add(this.btnRegresar);
             this.PanelContenedor.Controls.Add(this.btnAgregar);
             this.PanelContenedor.Controls.Add(this.btnGuardar);
             this.PanelContenedor.Controls.Add(this.btnEliminar);
@@ -125,21 +123,6 @@
             this.label2.Size = new System.Drawing.Size(113, 21);
             this.label2.TabIndex = 20;
             this.label2.Text = "Descuento";
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(24, 420);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(197, 35);
-            this.btnRegresar.TabIndex = 6;
-            this.btnRegresar.Text = "regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
             // 
             // btnAgregar
             // 
@@ -282,7 +265,6 @@
         private System.Windows.Forms.DataGridView dtgPanes;
         private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;

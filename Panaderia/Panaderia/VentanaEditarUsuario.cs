@@ -36,75 +36,80 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Falta llenar el campo Nombre", "ERROR*");
-            }
-            else if (txtApellidos.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Apellidos", "ERROR*");
-            }
-            else if (txtFecha.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Fecha Nac.", "ERROR*");
-            }
-            else if (txtDireccion.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Direccion", "ERROR*");
-            }
-            else if (txtPassword.Text.Equals(""))
-            {
-                MessageBox.Show("Falta llenar el campo Contraseña", "ERROR*");
-            }
-            else
-            {
-                Usuario obj = new Usuario();
-                Usuariodao vd = new Usuariodao();
-                String z = cmbTipo.SelectedItem.ToString();
-                DateTime dat = Convert.ToDateTime(txtFecha.Text); //"1/1/2010"
-
-                bool x = false;
-                if (z.Equals("ADMINISTRADOR"))
+                if (txtNombre.Text.Equals(""))
                 {
-                    x = true;
+                    MessageBox.Show("Falta llenar el campo Nombre", "ERROR*");
                 }
-
-                obj.Contraseña = txtPassword.Text;
-                obj.Nombre = txtNombre.Text;
-                obj.Apellidos = txtApellidos.Text;
-                obj.Fecha_Nac = dat;
-                obj.Direccion = txtDireccion.Text;
-                obj.Administrador = x;
-                obj.Id_Usuario = int.Parse(cmbUsuario.Text);
-                bool g = vd.Update(obj);
-                if (g)
+                else if (txtApellidos.Text.Equals(""))
                 {
-                    MessageBox.Show("Se modifico el registro correctamente", "Correcto");
+                    MessageBox.Show("Falta llenar el campo Apellidos", "ERROR*");
+                }
+                else if (txtFecha.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Fecha Nac.", "ERROR*");
+                }
+                else if (txtDireccion.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Direccion", "ERROR*");
+                }
+                else if (txtPassword.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta llenar el campo Contraseña", "ERROR*");
                 }
                 else
                 {
-                    MessageBox.Show("Ocurrio un error al querer actualizar", "ERROR*");
+                    Usuario obj = new Usuario();
+                    Usuariodao vd = new Usuariodao();
+                    String z = cmbTipo.SelectedItem.ToString();
+                    DateTime dat = Convert.ToDateTime(txtFecha.Text); //"1/1/2010"
+
+                    bool x = false;
+                    if (z.Equals("ADMINISTRADOR"))
+                    {
+                        x = true;
+                    }
+
+                    obj.Contraseña = txtPassword.Text;
+                    obj.Nombre = txtNombre.Text;
+                    obj.Apellidos = txtApellidos.Text;
+                    obj.Fecha_Nac = dat;
+                    obj.Direccion = txtDireccion.Text;
+                    obj.Administrador = x;
+                    obj.Id_Usuario = int.Parse(cmbUsuario.Text);
+                    bool g = vd.Update(obj);
+                    if (g)
+                    {
+                        MessageBox.Show("Se modifico el registro correctamente", "Correcto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrio un error al querer actualizar", "ERROR*");
+                    }
+
+
+
+                    txtNombre.Text = "";
+                    txtApellidos.Text = "";
+                    txtFecha.Text = "";
+                    txtDireccion.Text = "";
+                    cmbTipo.Text = "ADMINISTRADOR";
+                    txtPassword.Text = "";
+                    cmbUsuario.Text = "";
+                    txtNombre.Enabled = false;
+                    txtApellidos.Enabled = false;
+                    txtFecha.Enabled = false;
+                    txtDireccion.Enabled = false;
+                    txtPassword.Enabled = false;
+                    cmbTipo.Enabled = false;
                 }
-
-
-
-                txtNombre.Text = "";
-                txtApellidos.Text = "";
-                txtFecha.Text = "";
-                txtDireccion.Text = "";
-                cmbTipo.Text = "ADMINISTRADOR";
-                txtPassword.Text = "";
-                cmbUsuario.Text = "";
-                txtNombre.Enabled = false;
-                txtApellidos.Enabled = false;
-                txtFecha.Enabled = false;
-                txtDireccion.Enabled = false;
-                txtPassword.Enabled = false;
-                cmbTipo.Enabled = false;
             }
-        
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
+            }
 
-       
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -122,38 +127,46 @@ namespace Panaderia
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (cmbUsuario.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Falta llenar el campo ID", "ERROR*");
-            }
-            else
-            {
-                string f = "";
-                Usuario obj = new Usuario();
-                Usuariodao vd = new Usuariodao();
-                Usuario d = vd.Especifico(int.Parse(cmbUsuario.Text));
-                txtNombre.Text = d.Nombre;
-                txtApellidos.Text = d.Apellidos;
-                txtFecha.Text = d.Fecha_Nac+"";
-                txtDireccion.Text = d.Direccion;
-                if (d.Administrador)
+                if (cmbUsuario.Text.Equals(""))
                 {
-                    f = "ADMINISTRADOR";
+                    MessageBox.Show("Falta llenar el campo ID", "ERROR*");
                 }
                 else
                 {
-                    f = "EMPLEADO";
-                }
-                cmbTipo.Text = f;
-                txtPassword.Text = d.Contraseña;
+                    string f = "";
+                    Usuario obj = new Usuario();
+                    Usuariodao vd = new Usuariodao();
+                    Usuario d = vd.Especifico(int.Parse(cmbUsuario.Text));
+                    txtNombre.Text = d.Nombre;
+                    txtApellidos.Text = d.Apellidos;
+                    txtFecha.Text = d.Fecha_Nac + "";
+                    txtDireccion.Text = d.Direccion;
+                    if (d.Administrador)
+                    {
+                        f = "ADMINISTRADOR";
+                    }
+                    else
+                    {
+                        f = "EMPLEADO";
+                    }
+                    cmbTipo.Text = f;
+                    txtPassword.Text = d.Contraseña;
 
-                txtNombre.Enabled = true;
-                txtApellidos.Enabled = true;
-                txtFecha.Enabled = true;
-                txtDireccion.Enabled = true;
-                txtPassword.Enabled = true;
-                cmbTipo.Enabled = true;
+                    txtNombre.Enabled = true;
+                    txtApellidos.Enabled = true;
+                    txtFecha.Enabled = true;
+                    txtDireccion.Enabled = true;
+                    txtPassword.Enabled = true;
+                    cmbTipo.Enabled = true;
+                }
             }
+            else
+            {
+                MessageBox.Show("Usted no tiene permisos para esta acción");
+            }
+
         }
 
         /*

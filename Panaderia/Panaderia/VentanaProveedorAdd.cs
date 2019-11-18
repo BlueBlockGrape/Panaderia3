@@ -45,22 +45,29 @@ namespace Panaderia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Equals("") | txtDomicilio.Text.Equals("") | txtTel.Text.Equals("") | txtProducto.Text.Equals(""))
+            if (usuario.Administrador)
             {
-                MessageBox.Show("Campos obligatorios vacíos", "ERROR*");
+                if (txtNombre.Text.Equals("") | txtDomicilio.Text.Equals("") | txtTel.Text.Equals("") | txtProducto.Text.Equals(""))
+                {
+                    MessageBox.Show("Campos obligatorios vacíos", "ERROR*");
+                }
+                else
+                {
+                    p.Nombre = txtNombre.Text;
+                    p.Domicilio = txtDomicilio.Text;
+                    p.Telefono = txtTel.Text;
+                    p.Productos = txtProducto.Text;
+                    pd.Insert(p);
+                    MessageBox.Show("Registro Guardado", "Éxito");
+                    txtNombre.Text = "";
+                    txtDomicilio.Text = "";
+                    txtTel.Text = "";
+                    txtProducto.Text = "";
+                }
             }
             else
             {
-                p.Nombre = txtNombre.Text;
-                p.Domicilio = txtDomicilio.Text;
-                p.Telefono = txtTel.Text;
-                p.Productos = txtProducto.Text;
-                pd.Insert(p);                
-                MessageBox.Show("Registro Guardado", "Éxito");
-                txtNombre.Text = "";
-                txtDomicilio.Text = "";
-                txtTel.Text = "";
-                txtProducto.Text = "";
+                MessageBox.Show("Usted no tiene permisos para esta acción");
             }
         }
 
