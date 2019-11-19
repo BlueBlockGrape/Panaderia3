@@ -53,6 +53,7 @@ namespace Panaderia
                     obj.Nombre = txtNombre.Text;
                     obj.Existencias = int.Parse(txtExistencias.Text);
                     obj.Descripcion = txtDescripcion.Text;
+                    
                     bool valor = obj2.Agregar(obj);
                     if (valor)
                     {
@@ -272,5 +273,12 @@ namespace Panaderia
             txtDescripcion.ResetText();
             txtExistencias.ResetText();
         }
+
+        private void dgvProductos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
     }
 }

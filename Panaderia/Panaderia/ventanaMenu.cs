@@ -268,7 +268,7 @@ namespace Panaderia
                 ventassubmenu.Visible = false;
                 panessubmenu.Visible = false;
                 proveedoressubmenu.Visible = false;
-                AbrirForm(new VentanaProveedorDelete(usuario, listav));
+                AbrirForm(new VentanaPanesDelete(usuario, listav));
             }
             else
             {

@@ -28,7 +28,7 @@ namespace Datos.Daos
             {
                 Conexion.Open();
                 string insertQuery = "INSERT INTO Materia (Id_Materia, Nombre, Existencias, Descripcion, Ultima_Mod)" +
-                            "VALUES (null, @Nombre, @Existencias, @Descripcion, null)";
+                            "VALUES (null, @Nombre, @Existencias, @Descripcion, '2019-11-19 13:11:02')";
 
                 MySqlCommand SqlCom = new MySqlCommand(insertQuery, Conexion);
                 SqlCom.Parameters.AddWithValue("@Nombre", p.Nombre);
@@ -92,7 +92,8 @@ namespace Datos.Daos
         public List<Materia> Ver()
         {
             List<Materia> Lista = new List<Materia>();
-            Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
+            
+           Conexion.ConnectionString = "server=localhost; database=panaderia; uid=root; pwd=Root123;";
 
             Conexion.Open();
 
